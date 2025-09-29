@@ -1,0 +1,16 @@
+[
+	{
+		"title": "Oliver Twist",
+		"description": "Reconocida como una de las primeras novelas sociales, Oliver Twist expuso el trato cruel a los huérfanos y el trabajo infantil en la Inglaterra del siglo XIX. El personaje de Oliver Twist se inspiró en la historia real de Robert Blincoe, un huérfano que trabajaba como niño jornalero en una fábrica de algodón.",
+		"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1npvfUu3nsTkss4shTIcr-_AwWT5WGSTXnQ&s",
+		"author": "Charles Dickens",
+		"url": "https://www.suneo.mx/literatura/subidas/Charles%20Dickens%20Aventuras%20de%20Oliver%20Twist%20Espa%C3%B1ol.pdf"
+	},
+	{
+		"title": "El Principito",
+		"description": "El principito es una novela corta y la obra más famosa del escritor y aviador francés Antoine de Saint-Exupéry.​",
+		"image": "https://www.creafelicidad.com/wp-content/uploads/2017/10/descargar_principito_pdf.jpg",
+		"author": "Antoine De Saint-Exupéry",
+		"url": "https://web.seducoahuila.gob.mx/biblioweb/upload/el%20principito.pdf"
+	}
+]

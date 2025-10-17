@@ -5,4 +5,4 @@ APIs públicas, que pueden ser usadas por cualquier usuarios.
 
 
 > [!NOTE]
-> Las APIs están en desarrollo. Esto quiere decir que están en constantes cambios. Se recomienda actualizar sus webs o app que usan nuestras APIs.
+> Las APIs están en desarrollo. Esto quiere decir que están en constantes cambios. Se recomienda actualizar sus Webs o Apps que usan nuestras APIs.

@@ -1,0 +1,288 @@
+{
+    "id": "css",
+    "name": "Curso intensivo de CSS3",
+    "description": "Aprende a darle estilo y formato a tus páginas web, transformando estructuras planas en experiencias visuales atractivas 🎨. Desde los fundamentos hasta técnicas modernas y optimización profesional.",
+    "modulos": [
+        {
+            "id": 1,
+            "title": "Introducción a CSS",
+            "description": "Comprenderás qué es CSS, cómo funciona y las diferentes formas de aplicarlo para dar estilo a tus páginas web.",
+            "lecciones": [
+                {
+                    "id": "a1",
+                    "title": "¿Qué es CSS?",
+                    "explicacion": "CSS (Cascading Style Sheets) es el lenguaje que controla la apariencia visual de los documentos HTML. Permite definir colores, tipografías, tamaños, posiciones y animaciones. Gracias a CSS, el contenido y el diseño están separados, lo que facilita la gestión y el mantenimiento."
+                },
+                {
+                    "id": "a2",
+                    "title": "Cómo funciona CSS",
+                    "explicacion": "CSS aplica reglas a elementos HTML mediante selectores. Cada regla está compuesta por un selector y un bloque de declaraciones: `selector { propiedad: valor; }`. Por ejemplo, `p { color: red; font-size: 16px; }` aplica color rojo y tamaño 16px a los párrafos."
+                },
+                {
+                    "id": "a3",
+                    "title": "Formas de aplicar CSS",
+                    "explicacion": "Existen tres métodos principales: Inline (`<p style='color:red;'>`), Internal (dentro de `<style>` en el HTML) y External (archivo `.css` enlazado con `<link>`). La práctica profesional recomienda el uso de archivos externos para mantener un código limpio y modular."
+                },
+                {
+                    "id": "a4",
+                    "title": "Estructura y sintaxis",
+                    "explicacion": "Las reglas CSS siguen una sintaxis simple: un selector, seguido de llaves `{}`, dentro de las cuales se declaran las propiedades y valores. Los comentarios se escriben como `/* comentario */` y no afectan la ejecución."
+                }
+            ],
+            "video": "",
+            "dato": "CSS separa contenido y presentación, haciendo posible crear interfaces escalables, limpias y coherentes."
+        },
+        {
+            "id": 2,
+            "title": "Selectores y propiedades básicas",
+            "description": "Aprenderás a apuntar a los elementos correctos con selectores y aplicarles estilos fundamentales.",
+            "lecciones": [
+                {
+                    "id": "b1",
+                    "title": "Selectores básicos y combinados",
+                    "explicacion": "Los selectores permiten seleccionar elementos: por tipo (`div`), clase (`.boton`), ID (`#menu`) o combinados (`div p`). También existen descendientes (`ul li`), hijos (`div > p`) y hermanos (`h1 + p`)."
+                },
+                {
+                    "id": "b2",
+                    "title": "Selectores avanzados",
+                    "explicacion": "CSS ofrece selectores de atributos (`input[type='text']`), pseudo-clases (`a:hover`, `:nth-child()`), y pseudo-elementos (`::before`, `::after`). Permiten una personalización más detallada sin añadir HTML extra."
+                },
+                {
+                    "id": "b3",
+                    "title": "Colores, fondos y fuentes",
+                    "explicacion": "Propiedades como `color`, `background-color`, `background-image`, `font-family`, `font-size` y `font-weight` controlan la estética del texto y del fondo. Puedes usar nombres de color, valores hexadecimales, RGB o HSL."
+                },
+                {
+                    "id": "b4",
+                    "title": "Modelo de caja (Box Model)",
+                    "explicacion": "Cada elemento HTML se representa como una caja que incluye: `content`, `padding`, `border` y `margin`. Entender este modelo es esencial para maquetar correctamente. Propiedades: `box-sizing`, `margin`, `padding`, `border`."
+                },
+                {
+                    "id": "b5",
+                    "title": "Unidades de medida y valores",
+                    "explicacion": "CSS utiliza unidades absolutas (px, cm) y relativas (%, em, rem, vw, vh). Las unidades relativas permiten diseños fluidos y adaptables."
+                }
+            ],
+            "video": "",
+            "dato": "Dominar selectores y el modelo de caja es la base para maquetar cualquier diseño profesional."
+        },
+        {
+            "id": 3,
+            "title": "Diseño y layout moderno",
+            "description": "Aprenderás las técnicas más utilizadas para organizar los elementos de una página y crear layouts responsivos y flexibles.",
+            "lecciones": [
+                {
+                    "id": "c1",
+                    "title": "Display y visibilidad",
+                    "explicacion": "`display` define cómo se muestra un elemento (`block`, `inline`, `flex`, `grid`, `none`). Propiedades relacionadas: `visibility`, `overflow` y `z-index`."
+                },
+                {
+                    "id": "c2",
+                    "title": "Posicionamiento avanzado",
+                    "explicacion": "`position` permite ubicar elementos de forma `static`, `relative`, `absolute`, `fixed` o `sticky`. Con `top`, `bottom`, `left`, `right` puedes ajustar su ubicación exacta."
+                },
+                {
+                    "id": "c3",
+                    "title": "Flexbox",
+                    "explicacion": "Un sistema unidimensional que facilita la alineación y distribución de espacio en contenedores. Propiedades clave: `display: flex;`, `justify-content`, `align-items`, `flex-wrap`, `align-self` y `order`."
+                },
+                {
+                    "id": "c4",
+                    "title": "CSS Grid Layout",
+                    "explicacion": "Un sistema bidimensional para crear estructuras complejas. Usa `display: grid;` y define filas y columnas con `grid-template-rows` y `grid-template-columns`. Permite diseños fluidos, simétricos y responsivos."
+                },
+                {
+                    "id": "c5",
+                    "title": "Floats y Clearfix (herencia clásica)",
+                    "explicacion": "Antes de Flexbox y Grid, `float` se usaba para alinear elementos. Aunque es una técnica antigua, sigue siendo útil en casos específicos."
+                },
+                {
+                    "id": "c6",
+                    "title": "Responsive Design y Media Queries",
+                    "explicacion": "Usa `@media` para adaptar el diseño según el tamaño de la pantalla. Ejemplo: `@media (max-width: 768px) { body { font-size: 14px; } }`. Esencial para móviles."
+                }
+            ],
+            "video": "",
+            "dato": "Flexbox y Grid revolucionaron la maquetación, haciendo el responsive design mucho más eficiente y limpio."
+        },
+        {
+            "id": 4,
+            "title": "Tipografía, íconos y estilos visuales",
+            "description": "Controla la apariencia textual, usa fuentes personalizadas y aplica estilos visuales con sombras, bordes y degradados.",
+            "lecciones": [
+                {
+                    "id": "d1",
+                    "title": "Control tipográfico",
+                    "explicacion": "Propiedades clave: `font-family`, `font-size`, `font-weight`, `line-height`, `letter-spacing` y `text-align`. Afectan directamente la legibilidad del texto."
+                },
+                {
+                    "id": "d2",
+                    "title": "Fuentes personalizadas y Google Fonts",
+                    "explicacion": "Puedes importar fuentes externas con `@import` o `<link>`. Ejemplo: `@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');`."
+                },
+                {
+                    "id": "d3",
+                    "title": "Sombras y efectos visuales",
+                    "explicacion": "Usa `box-shadow` y `text-shadow` para crear profundidad. También puedes aplicar efectos como `opacity`, `border-radius` y `filter: blur();`."
+                },
+                {
+                    "id": "d4",
+                    "title": "Degradados y transparencias",
+                    "explicacion": "Crea fondos con transiciones suaves entre colores usando `linear-gradient()` o `radial-gradient()`."
+                },
+                {
+                    "id": "d5",
+                    "title": "Uso de íconos y SVG",
+                    "explicacion": "Puedes integrar íconos con librerías como Font Awesome o usar SVG para gráficos escalables y ligeros."
+                }
+            ],
+            "video": "",
+            "dato": "La tipografía y los efectos visuales son pilares del diseño web moderno. Un buen uso mejora la experiencia y legibilidad."
+        },
+        {
+            "id": 5,
+            "title": "Animaciones, transiciones y transformaciones 3D",
+            "description": "Domina el arte del movimiento con efectos suaves, transformaciones y animaciones avanzadas.",
+            "lecciones": [
+                {
+                    "id": "e1",
+                    "title": "Transiciones suaves",
+                    "explicacion": "Permiten animar el cambio de propiedades. Ejemplo: `transition: all 0.3s ease;` al pasar el mouse (`:hover`)."
+                },
+                {
+                    "id": "e2",
+                    "title": "Animaciones con @keyframes",
+                    "explicacion": "Define secuencias de animación con `@keyframes` y aplícalas con `animation-name`, `animation-duration` y `animation-iteration-count`."
+                },
+                {
+                    "id": "e3",
+                    "title": "Transformaciones 2D y 3D",
+                    "explicacion": "`transform` permite rotar (`rotate()`), escalar (`scale()`), trasladar (`translate()`), e inclinar (`skew()`). En 3D, se combinan con `perspective` y `rotateY()` o `rotateX()`."
+                },
+                {
+                    "id": "e4",
+                    "title": "Animaciones complejas y delays",
+                    "explicacion": "Puedes encadenar animaciones con `animation-delay`, `animation-fill-mode` y `animation-timing-function` para mayor control."
+                }
+            ],
+            "video": "",
+            "dato": "Las animaciones CSS logran efectos profesionales sin depender de JavaScript ni bibliotecas externas."
+        },
+        {
+            "id": 6,
+            "title": "Variables, funciones y preprocesadores",
+            "description": "Aprende a reutilizar valores, modular tu CSS y usar herramientas profesionales como SASS y LESS.",
+            "lecciones": [
+                {
+                    "id": "f1",
+                    "title": "Variables CSS (Custom Properties)",
+                    "explicacion": "Permiten guardar valores reutilizables: `--color-primario: #3498db;`. Se usan con `var(--color-primario)`."
+                },
+                {
+                    "id": "f2",
+                    "title": "Funciones CSS útiles",
+                    "explicacion": "Funciones como `calc()`, `min()`, `max()` y `clamp()` ayudan a crear diseños dinámicos y responsivos sin JavaScript."
+                },
+                {
+                    "id": "f3",
+                    "title": "Introducción a SASS y LESS",
+                    "explicacion": "Preprocesadores que amplían CSS con variables, anidamiento y mixins. Ejemplo: `@mixin boton { background: blue; color: white; }`."
+                },
+                {
+                    "id": "f4",
+                    "title": "Buenas prácticas con preprocesadores",
+                    "explicacion": "Divide tus estilos en módulos (`_header.scss`, `_footer.scss`) y compílalos en un archivo principal. Mejora la organización y mantenibilidad."
+                }
+            ],
+            "video": "",
+            "dato": "El uso de variables y preprocesadores lleva tu CSS a nivel profesional, aumentando la eficiencia y mantenibilidad."
+        },
+        {
+            "id": 7,
+            "title": "Frameworks, metodologías y arquitectura CSS",
+            "description": "Organiza tu código y acelera tu flujo de trabajo con sistemas estructurados y librerías de estilos.",
+            "lecciones": [
+                {
+                    "id": "g1",
+                    "title": "Metodología BEM (Block Element Modifier)",
+                    "explicacion": "Facilita la organización del código CSS con nombres estructurados: `bloque__elemento--modificador`. Ejemplo: `card__titulo--grande`."
+                },
+                {
+                    "id": "g2",
+                    "title": "Frameworks populares",
+                    "explicacion": "Bootstrap, Tailwind CSS y Bulma ofrecen componentes preconstruidos y clases reutilizables que aceleran el desarrollo."
+                },
+                {
+                    "id": "g3",
+                    "title": "Arquitectura CSS (SMACSS, OOCSS, ITCSS)",
+                    "explicacion": "Estas metodologías ayudan a escalar proyectos grandes manteniendo coherencia y legibilidad en el código CSS."
+                },
+                {
+                    "id": "g4",
+                    "title": "Uso de variables y temas globales",
+                    "explicacion": "Permite cambiar esquemas de colores o estilos completos alterando solo una variable global."
+                }
+            ],
+            "video": "",
+            "dato": "Aplicar metodologías y frameworks mejora la productividad y mantiene estándares de calidad profesional."
+        },
+        {
+            "id": 8,
+            "title": "Optimización, compatibilidad y rendimiento",
+            "description": "Aprende a optimizar tus estilos para mejorar la velocidad de carga, la compatibilidad y la eficiencia general.",
+            "lecciones": [
+                {
+                    "id": "h1",
+                    "title": "Minificación y compresión",
+                    "explicacion": "Reducir espacios y comentarios del CSS minimiza el tamaño del archivo y mejora la velocidad de carga."
+                },
+                {
+                    "id": "h2",
+                    "title": "Compatibilidad entre navegadores",
+                    "explicacion": "Utiliza prefijos (`-webkit-`, `-moz-`) y verifica el soporte en herramientas como 'Can I Use'."
+                },
+                {
+                    "id": "h3",
+                    "title": "Critical CSS y carga diferida",
+                    "explicacion": "Cargar solo los estilos necesarios al inicio mejora el rendimiento percibido y la puntuación en Core Web Vitals."
+                },
+                {
+                    "id": "h4",
+                    "title": "Buenas prácticas para mantenimiento",
+                    "explicacion": "Comenta, organiza y evita la duplicación. Usa convenciones claras de nombres y estructura."
+                }
+            ],
+            "video": "",
+            "dato": "Un CSS optimizado es clave para una web rápida, profesional y escalable."
+        },
+        {
+            "id": 9,
+            "title": "Proyecto final: Diseño de tu portfolio, hecho anteriormente en HTML",
+            "description": "Aplica todo lo aprendido para diseñar y estilizar tu propio portfolio web profesional.",
+            "lecciones": [
+                {
+                    "id": "i1",
+                    "title": "Planificación del diseño",
+                    "explicacion": "Define la estructura, paleta de colores y tipografía de tu portfolio antes de comenzar a codificar."
+                },
+                {
+                    "id": "i2",
+                    "title": "Maquetación con Flexbox y Grid",
+                    "explicacion": "Utiliza las técnicas aprendidas para crear un layout responsivo y atractivo."
+                },
+                {
+                    "id": "i3",
+                    "title": "Estilización avanzada",
+                    "explicacion": "Aplica tipografía, sombras, degradados y animaciones para mejorar la experiencia visual."
+                },
+                {
+                    "id": "i4",
+                    "title": "Optimización y revisión final",
+                    "explicacion": "Minifica tu CSS, verifica compatibilidad y asegúrate de que todo funcione correctamente en diferentes dispositivos."
+                }
+            ],
+            "video": "",
+            "dato": "El proyecto final es tu oportunidad para demostrar tus habilidades y crear una presencia profesional en línea."
+        }
+    ]
+}

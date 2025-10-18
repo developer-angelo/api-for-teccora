@@ -445,7 +445,7 @@
         {
           "id": "l2",
           "title": "Validación de correos y contraseñas",
-          "explicacion": "Ejemplo: `preg_match('/^[\\w.-]+@[\\w.-]+\\.\\w+$/', $email);` valida emails. Para contraseñas, usa patrones que exijan mayúsculas, números y símbolos."
+          "explicacion": "Ejemplo: `preg_match('/^[\\\\w.-]+@[\\\\w.-]+\\\\.\\\\w+$/', $email);` valida emails. Para contraseñas, usa patrones que exijan mayúsculas, números y símbolos."
         },
         {
           "id": "l3",
@@ -567,7 +567,7 @@
         {
           "id": "o3",
           "title": "Namespaces en PHP",
-          "explicacion": "Los namespaces organizan clases y evitan conflictos de nombres. Ejemplo: `namespace App\Controllers; class HomeController {}`."
+          "explicacion": "Los namespaces organizan clases y evitan conflictos de nombres. Ejemplo: `namespace App\\Controllers; class HomeController {}`."
         },
         {
           "id": "o4",

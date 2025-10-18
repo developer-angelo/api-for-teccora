@@ -1,2 +1,8 @@
-# api-for-teccora
-APIS PARA TECCORA.
+# API for Teccora
+APIs públicas, que pueden ser usadas por cualquier usuarios. 
+
+> La URL: https://developer-angelo.github.io/api-for-teccora/${apiName}/${dato}.json
+
+
+> [!NOTE]
+> Las APIs están en desarrollo. Esto quiere decir que están en constantes cambios. Se recomienda actualizar sus Webs o Apps que usan nuestras APIs.

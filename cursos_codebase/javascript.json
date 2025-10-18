@@ -1,151 +1,311 @@
 {
     "id": "js",
     "name": "Curso intensivo de JavaScript",
-    "description": "Aprende el lenguaje de programación que da vida a las páginas web, desde interactividad básica hasta lógica avanzada ⚡.",
+    "description": "Aprende JavaScript desde cero hasta nivel avanzado, dominando la lógica, el DOM, la asincronía, APIs, y entornos modernos como Node.js y frameworks front-end. 🚀",
     "modulos": [
         {
             "id": 1,
             "title": "Introducción a JavaScript",
-            "description": "Conocerás qué es JavaScript, cómo funciona y cómo integrarlo en tus páginas web.",
+            "description": "Comprende los fundamentos del lenguaje que da vida a la web.",
             "lecciones": [
                 {
                     "id": "a1",
                     "title": "¿Qué es JavaScript?",
-                    "explicacion": "JavaScript es un lenguaje de programación interpretado que se ejecuta en el navegador. Permite agregar interactividad a las páginas web, manipular el DOM, validar formularios, crear animaciones y mucho más."
+                    "explicacion": "JavaScript es un lenguaje de programación interpretado que se ejecuta principalmente en el navegador, permitiendo agregar interactividad y dinamismo a las páginas web."
                 },
                 {
                     "id": "a2",
                     "title": "Dónde y cómo usar JS",
-                    "explicacion": "JavaScript puede incluirse inline en HTML con `<script>`, como archivo externo `.js` enlazado con `<script src='archivo.js'></script>`, o ejecutarse en entornos como Node.js fuera del navegador."
+                    "explicacion": "JS puede usarse en navegadores, servidores (Node.js), aplicaciones móviles y más. Se integra con HTML mediante la etiqueta `<script>`."
                 },
                 {
                     "id": "a3",
                     "title": "Sintaxis básica",
-                    "explicacion": "JavaScript utiliza variables (`let`, `const`, `var`), operadores, funciones, condiciones (`if`, `else`), bucles (`for`, `while`) y objetos para manejar la lógica de las páginas."
+                    "explicacion": "JS utiliza variables (`let`, `const`), operadores, funciones, condicionales y bucles para crear lógica dinámica."
+                },
+                {
+                    "id": "a4",
+                    "title": "Configuración del entorno",
+                    "explicacion": "Aprende a usar la consola del navegador, instalar VS Code, y ejecutar JavaScript en Node.js."
                 }
             ],
             "video": "",
-            "dato": "JS es el lenguaje clave para crear páginas web dinámicas, complementando HTML y CSS."
+            "dato": "JS es el lenguaje más usado del mundo, impulsando tanto front-end como back-end."
         },
         {
             "id": 2,
             "title": "Variables, tipos y operadores",
-            "description": "Aprenderás a manejar datos en JavaScript y realizar operaciones básicas.",
+            "description": "Aprende a manejar y procesar datos dentro de tu código.",
             "lecciones": [
                 {
                     "id": "b1",
                     "title": "Variables y constantes",
-                    "explicacion": "Se utilizan `let` y `const` para almacenar datos. `let` permite reasignar valores, mientras que `const` mantiene el valor constante."
+                    "explicacion": "Define variables con `let` y `const` para almacenar valores. `const` no permite reasignación, lo que evita errores comunes."
                 },
                 {
                     "id": "b2",
-                    "title": "Tipos de datos",
-                    "explicacion": "JavaScript maneja tipos primitivos como `string`, `number`, `boolean`, `null`, `undefined` y `symbol`, además de objetos y arrays."
+                    "title": "Tipos de datos y conversión",
+                    "explicacion": "JS maneja tipos primitivos y de referencia. Aprende a convertir entre tipos (`Number()`, `String()`, `Boolean()`)."
                 },
                 {
                     "id": "b3",
-                    "title": "Operadores",
-                    "explicacion": "Incluyen aritméticos (`+`, `-`, `*`, `/`), de asignación (`=`, `+=`), de comparación (`==`, `===`, `!=`, `!==`) y lógicos (`&&`, `||`, `!`)."
+                    "title": "Operadores y precedencia",
+                    "explicacion": "Conoce los operadores aritméticos, lógicos y de comparación. Entiende el orden en que se evalúan las expresiones."
+                },
+                {
+                    "id": "b4",
+                    "title": "Template literals y concatenación",
+                    "explicacion": "Los template literals (`` `Hola ${nombre}` ``) permiten crear strings dinámicos de forma limpia y legible."
                 }
             ],
             "video": "",
-            "dato": "Dominar variables y tipos es la base para cualquier programa en JavaScript."
+            "dato": "Dominar los tipos de datos es esencial para evitar errores lógicos y de conversión."
         },
         {
             "id": 3,
             "title": "Condicionales y bucles",
-            "description": "Controla el flujo de tus programas tomando decisiones y repitiendo tareas automáticamente.",
+            "description": "Controla el flujo de ejecución en tus programas.",
             "lecciones": [
                 {
                     "id": "c1",
-                    "title": "Condicionales",
-                    "explicacion": "Las estructuras `if`, `else if` y `else` permiten ejecutar código según condiciones específicas. También existen los operadores ternarios para decisiones rápidas."
+                    "title": "Condicionales simples y múltiples",
+                    "explicacion": "Aprende a usar `if`, `else if`, `else` y el operador ternario para tomar decisiones en tu código."
                 },
                 {
                     "id": "c2",
-                    "title": "Bucles",
-                    "explicacion": "Los bucles `for`, `while` y `do...while` permiten repetir acciones múltiples veces. Son fundamentales para procesar arrays o datos dinámicos."
+                    "title": "Bucles y recorridos",
+                    "explicacion": "Itera sobre datos usando `for`, `while`, `do...while` o `for...of` para recorrer arrays y objetos."
                 },
                 {
                     "id": "c3",
-                    "title": "Break y continue",
-                    "explicacion": "`break` detiene un bucle antes de que termine, y `continue` salta a la siguiente iteración. Ambos ayudan a controlar el flujo de repetición."
+                    "title": "Control del flujo",
+                    "explicacion": "Usa `break`, `continue` y `return` estratégicamente para optimizar tus bucles."
                 }
             ],
             "video": "",
-            "dato": "Condicionales y bucles son el motor que permite que tus programas tomen decisiones y repitan tareas eficientemente."
+            "dato": "El control de flujo es el corazón de la lógica en cualquier lenguaje de programación."
         },
         {
             "id": 4,
             "title": "Funciones y eventos",
-            "description": "Aprenderás a organizar tu código en bloques reutilizables y responder a interacciones del usuario.",
+            "description": "Aprende a crear funciones reutilizables y manejar eventos del usuario.",
             "lecciones": [
                 {
                     "id": "d1",
-                    "title": "Funciones",
-                    "explicacion": "Las funciones encapsulan código que se puede reutilizar. Se definen con `function nombre() { }` o con arrow functions: `const nombre = () => { }`."
+                    "title": "Declaración y expresión de funciones",
+                    "explicacion": "Diferencia entre funciones declaradas, expresadas y flecha. Aprende cuándo usar cada una."
                 },
                 {
                     "id": "d2",
-                    "title": "Parámetros y retorno",
-                    "explicacion": "Las funciones pueden recibir parámetros para procesar información y devolver resultados usando `return`."
+                    "title": "Parámetros, argumentos y retorno",
+                    "explicacion": "Pasa información a funciones y recibe resultados personalizados con `return`."
                 },
                 {
                     "id": "d3",
                     "title": "Eventos en el DOM",
-                    "explicacion": "Los eventos permiten que tu código responda a acciones del usuario, como clicks (`onclick`), cambios en inputs (`onchange`) o movimiento del mouse (`onmousemove`)."
+                    "explicacion": "Responde a acciones del usuario con eventos como `click`, `input`, `submit` y `keydown`."
+                },
+                {
+                    "id": "d4",
+                    "title": "Funciones anónimas y callbacks",
+                    "explicacion": "Aprende a pasar funciones como argumentos para manejar acciones asincrónicas o repetitivas."
                 }
             ],
             "video": "",
-            "dato": "Funciones y eventos son esenciales para crear aplicaciones interactivas y dinámicas."
+            "dato": "Las funciones convierten el código en bloques inteligentes y reutilizables."
         },
         {
             "id": 5,
             "title": "Arrays y objetos",
-            "description": "Aprenderás a manejar colecciones de datos y estructuras complejas en JS.",
+            "description": "Domina las estructuras de datos más importantes de JS.",
             "lecciones": [
                 {
                     "id": "e1",
-                    "title": "Arrays",
-                    "explicacion": "Los arrays almacenan listas de elementos, accesibles por índice. Métodos como `push()`, `pop()`, `map()`, `filter()` y `forEach()` permiten manipularlos eficientemente."
+                    "title": "Creación y manipulación de arrays",
+                    "explicacion": "Métodos como `map`, `filter`, `reduce` y `find` permiten trabajar eficientemente con listas."
                 },
                 {
                     "id": "e2",
-                    "title": "Objetos",
-                    "explicacion": "Los objetos agrupan datos y funciones bajo un mismo nombre usando `key: value`. Permiten modelar información compleja, como un usuario `{ nombre: 'Angelo', edad: 14 }`."
+                    "title": "Objetos literales y dinámicos",
+                    "explicacion": "Aprende a definir, acceder y modificar propiedades dinámicamente."
                 },
                 {
                     "id": "e3",
-                    "title": "Destructuring y spread",
-                    "explicacion": "Destructuring permite extraer valores de arrays y objetos fácilmente. Spread (`...`) ayuda a copiar y combinar arrays u objetos sin mutarlos."
+                    "title": "Destructuring y spread operator",
+                    "explicacion": "Simplifica la extracción y combinación de datos en arrays y objetos."
+                },
+                {
+                    "id": "e4",
+                    "title": "JSON: intercambio de datos",
+                    "explicacion": "Conoce cómo usar `JSON.stringify()` y `JSON.parse()` para enviar y recibir datos en formato JSON."
                 }
             ],
             "video": "",
-            "dato": "Arrays y objetos son fundamentales para manejar datos dinámicos en cualquier aplicación web."
+            "dato": "El 90% de los datos en la web viajan como JSON; dominarlo es clave."
         },
         {
             "id": 6,
-            "title": "JavaScript moderno y buenas prácticas",
-            "description": "Explora ES6+ y técnicas modernas para escribir código limpio, eficiente y mantenible.",
+            "title": "Asincronía en JavaScript",
+            "description": "Aprende a trabajar con procesos que no se ejecutan al mismo tiempo.",
             "lecciones": [
                 {
                     "id": "f1",
-                    "title": "ES6+ y sintaxis moderna",
-                    "explicacion": "Aprende `let`, `const`, arrow functions, template literals, destructuring, módulos y clases, que hacen el código más legible y poderoso."
+                    "title": "Callbacks y el problema del callback hell",
+                    "explicacion": "Los callbacks permiten ejecutar funciones después de otras, pero pueden complicar el código si se anidan demasiado."
                 },
                 {
                     "id": "f2",
-                    "title": "Manipulación del DOM",
-                    "explicacion": "Con métodos como `querySelector`, `getElementById`, `appendChild` y `removeChild` puedes crear, modificar y eliminar elementos dinámicamente."
+                    "title": "Promises",
+                    "explicacion": "Las promesas (`Promise`) simplifican el manejo de operaciones asincrónicas con `.then()` y `.catch()`."
                 },
                 {
                     "id": "f3",
-                    "title": "Buenas prácticas",
-                    "explicacion": "Mantener un código modular, comentar funciones, evitar duplicación y usar nombres claros facilita el mantenimiento y escalabilidad del proyecto."
+                    "title": "Async / Await",
+                    "explicacion": "`async` y `await` permiten escribir código asincrónico de forma más clara y secuencial."
+                },
+                {
+                    "id": "f4",
+                    "title": "Manejo de errores asincrónicos",
+                    "explicacion": "Aprende a manejar errores con `try...catch` dentro de funciones `async`."
                 }
             ],
             "video": "",
-            "dato": "Escribir código limpio y moderno hace que tus proyectos sean profesionales y fáciles de mantener."
+            "dato": "La asincronía es lo que hace que JS sea ideal para aplicaciones web rápidas y reactivas."
+        },
+        {
+            "id": 7,
+            "title": "Consumo de APIs y Fetch",
+            "description": "Aprende a conectar JavaScript con datos externos.",
+            "lecciones": [
+                {
+                    "id": "g1",
+                    "title": "Qué es una API y cómo funciona",
+                    "explicacion": "Las APIs permiten acceder a datos de servicios externos mediante peticiones HTTP."
+                },
+                {
+                    "id": "g2",
+                    "title": "Fetch API",
+                    "explicacion": "La función `fetch()` permite hacer solicitudes HTTP y trabajar con respuestas JSON."
+                },
+                {
+                    "id": "g3",
+                    "title": "Async/Await con Fetch",
+                    "explicacion": "Usa `await fetch()` para obtener datos de forma elegante y legible."
+                },
+                {
+                    "id": "g4",
+                    "title": "Errores y control de estado",
+                    "explicacion": "Aprende a manejar errores con `response.ok` y `try...catch`."
+                }
+            ],
+            "video": "",
+            "dato": "Las APIs son el puente entre tu app y el mundo exterior: clima, usuarios, noticias, etc."
+        },
+        {
+            "id": 8,
+            "title": "Programación orientada a objetos (POO)",
+            "description": "Aprende a crear clases, instancias y herencia en JS moderno.",
+            "lecciones": [
+                {
+                    "id": "h1",
+                    "title": "Clases y objetos",
+                    "explicacion": "Crea clases con `class` y genera instancias usando `new`."
+                },
+                {
+                    "id": "h2",
+                    "title": "Constructores y métodos",
+                    "explicacion": "Define propiedades iniciales y comportamientos dentro de una clase."
+                },
+                {
+                    "id": "h3",
+                    "title": "Herencia y superclases",
+                    "explicacion": "Usa `extends` y `super()` para heredar comportamientos de otras clases."
+                },
+                {
+                    "id": "h4",
+                    "title": "Encapsulación y métodos estáticos",
+                    "explicacion": "Protege datos internos con `#` y usa métodos estáticos para utilidades generales."
+                }
+            ],
+            "video": "",
+            "dato": "La POO hace tu código más organizado, reutilizable y escalable."
+        },
+        {
+            "id": 9,
+            "title": "Node.js y entorno backend",
+            "description": "Da tus primeros pasos en el backend con JavaScript.",
+            "lecciones": [
+                {
+                    "id": "i1",
+                    "title": "¿Qué es Node.js?",
+                    "explicacion": "Node.js permite ejecutar JavaScript en el servidor, fuera del navegador."
+                },
+                {
+                    "id": "i2",
+                    "title": "Módulos y NPM",
+                    "explicacion": "Aprende a usar `require` o `import` y a gestionar paquetes con NPM."
+                },
+                {
+                    "id": "i3",
+                    "title": "Creación de un servidor básico",
+                    "explicacion": "Usa el módulo `http` o frameworks como Express para crear APIs."
+                },
+                {
+                    "id": "i4",
+                    "title": "Manejo de archivos",
+                    "explicacion": "Usa el módulo `fs` para leer y escribir archivos desde Node.js."
+                }
+            ],
+            "video": "",
+            "dato": "Node.js convierte a JavaScript en un lenguaje full stack: cliente y servidor."
+        },
+        {
+            "id": 10,
+            "title": "Testing, depuración y optimización",
+            "description": "Aprende a detectar errores, probar tu código y hacerlo más eficiente.",
+            "lecciones": [
+                {
+                    "id": "j1",
+                    "title": "Depuración con console y debugger",
+                    "explicacion": "Usa `console.log()` y `debugger` para encontrar errores lógicos fácilmente."
+                },
+                {
+                    "id": "j2",
+                    "title": "Testing con Jest",
+                    "explicacion": "Aprende los fundamentos del testing automatizado con Jest."
+                },
+                {
+                    "id": "j3",
+                    "title": "Optimización de código",
+                    "explicacion": "Identifica cuellos de botella y aplica técnicas de rendimiento."
+                }
+            ],
+            "video": "",
+            "dato": "Probar y optimizar tu código te diferencia como desarrollador profesional."
+        },
+        {
+            "id": 11,
+            "title": "Proyecto final: Aplicación completa",
+            "description": "Pon en práctica todo lo aprendido desarrollando un proyecto real.",
+            "lecciones": [
+                {
+                    "id": "k1",
+                    "title": "Planificación del proyecto",
+                    "explicacion": "Define los objetivos, funcionalidades y diseño de tu aplicación."
+                },
+                {
+                    "id": "k2",
+                    "title": "Consumo de APIs y almacenamiento local",
+                    "explicacion": "Integra una API pública y guarda datos con `localStorage`."
+                },
+                {
+                    "id": "k3",
+                    "title": "Despliegue y mantenimiento",
+                    "explicacion": "Aprende a subir tu proyecto a GitHub Pages, Netlify o Vercel."
+                }
+            ],
+            "video": "",
+            "dato": "Crear un proyecto final es el paso definitivo para consolidar tus habilidades en JavaScript."
         }
     ]
 }

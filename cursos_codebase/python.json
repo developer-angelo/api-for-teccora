@@ -1,151 +1,709 @@
 {
-    "id": "python",
-    "name": "Curso intensivo de Python",
-    "description": "Aprende Python, uno de los lenguajes más populares y versátiles del mundo, ideal para desarrollo web, automatización y ciencia de datos 🐍.",
-    "modulos": [
+  "id": "python",
+  "name": "Curso intensivo de Python",
+  "description": "Curso completo de Python desde cero hasta experto. Aprende desde los fundamentos hasta técnicas avanzadas de programación, análisis de datos, desarrollo web y automatización con uno de los lenguajes más poderosos del mundo 🐍.",
+  "modulos": [
+    {
+      "id": 1,
+      "title": "Introducción a Python y su ecosistema",
+      "description": "Conocerás qué es Python, su historia, sus ventajas, ámbitos de aplicación y cómo preparar tu entorno de desarrollo para empezar a programar correctamente.",
+      "lecciones": [
         {
-            "id": 1,
-            "title": "Introducción a Python",
-            "description": "Conocerás qué es Python, su historia y cómo instalarlo para comenzar a programar.",
-            "lecciones": [
-                {
-                    "id": "a1",
-                    "title": "¿Qué es Python?",
-                    "explicacion": "Python es un lenguaje de programación de alto nivel, interpretado y de propósito general, famoso por su sintaxis clara y legible. Se usa en desarrollo web, automatización, inteligencia artificial, análisis de datos y más."
-                },
-                {
-                    "id": "a2",
-                    "title": "Historia de Python",
-                    "explicacion": "Creado por Guido van Rossum en 1991, Python se ha convertido en uno de los lenguajes más populares del mundo debido a su simplicidad y versatilidad."
-                },
-                {
-                    "id": "a3",
-                    "title": "Instalación y entorno",
-                    "explicacion": "Puedes instalar Python desde python.org y usar IDEs como PyCharm, VSCode o incluso el terminal. Conocer el entorno te permite ejecutar scripts y probar código fácilmente."
-                }
-            ],
-            "video": "",
-            "dato": "Python es ideal para principiantes pero poderoso para profesionales."
+          "id": "a1",
+          "title": "¿Qué es Python y por qué es tan popular?",
+          "explicacion": "Python es un lenguaje interpretado, de alto nivel y propósito general, diseñado para ser legible y expresivo. Su lema es 'Simple es mejor que complejo'. Gracias a su enorme comunidad y miles de librerías, hoy se utiliza en desarrollo web, automatización, inteligencia artificial, análisis de datos, videojuegos, IoT y más."
         },
         {
-            "id": 2,
-            "title": "Variables, tipos y operadores",
-            "description": "Aprenderás a almacenar y manipular datos en Python, además de hacer operaciones básicas.",
-            "lecciones": [
-                {
-                    "id": "b1",
-                    "title": "Variables y asignación",
-                    "explicacion": "En Python no es necesario declarar el tipo de variable. Basta con escribir `nombre = 'Angelo'` o `edad = 14`. Python detecta el tipo automáticamente."
-                },
-                {
-                    "id": "b2",
-                    "title": "Tipos de datos",
-                    "explicacion": "Python maneja `int` (números enteros), `float` (decimales), `str` (cadenas de texto), `bool` (True/False), `list`, `tuple`, `dict` y `set`."
-                },
-                {
-                    "id": "b3",
-                    "title": "Operadores",
-                    "explicacion": "Incluyen aritméticos (`+`, `-`, `*`, `/`, `//`, `%`, `**`), de comparación (`==`, `!=`, `>`, `<`), lógicos (`and`, `or`, `not`) y de asignación (`=`, `+=`, `-=`)."
-                }
-            ],
-            "video": "",
-            "dato": "Conocer los tipos y operadores permite realizar cálculos y procesar información eficientemente."
+          "id": "a2",
+          "title": "Historia y evolución del lenguaje",
+          "explicacion": "Python fue creado por Guido van Rossum en 1991. Desde entonces ha pasado por varias etapas: Python 2 marcó el inicio de su expansión, y Python 3 modernizó el lenguaje con mejoras en Unicode, sintaxis y rendimiento. Actualmente es uno de los lenguajes más usados en el mundo académico e industrial."
         },
         {
-            "id": 3,
-            "title": "Condicionales y bucles",
-            "description": "Controla el flujo de tu programa tomando decisiones y repitiendo tareas automáticamente.",
-            "lecciones": [
-                {
-                    "id": "c1",
-                    "title": "Condicionales if, elif, else",
-                    "explicacion": "Permiten ejecutar código según condiciones: `if edad >= 18: print('Mayor de edad') else: print('Menor')`."
-                },
-                {
-                    "id": "c2",
-                    "title": "Bucles for",
-                    "explicacion": "El bucle `for` recorre elementos de listas, tuplas, diccionarios o rangos: `for i in range(5): print(i)`."
-                },
-                {
-                    "id": "c3",
-                    "title": "Bucles while",
-                    "explicacion": "`while` ejecuta un bloque mientras se cumpla la condición: `while contador < 5: contador += 1`."
-                }
-            ],
-            "video": "",
-            "dato": "Condicionales y bucles son esenciales para programar lógica repetitiva y decisiones inteligentes."
+          "id": "a3",
+          "title": "Instalación y configuración del entorno",
+          "explicacion": "Puedes descargar Python desde python.org e instalarlo fácilmente en cualquier sistema operativo. Configura un entorno de desarrollo usando VSCode o PyCharm, y aprende a ejecutar scripts desde el terminal. Además, conocerás cómo crear entornos virtuales (venv) para aislar proyectos."
         },
         {
-            "id": 4,
-            "title": "Funciones y módulos",
-            "description": "Organiza tu código en bloques reutilizables y aprende a importar funcionalidades externas.",
-            "lecciones": [
-                {
-                    "id": "d1",
-                    "title": "Definiendo funciones",
-                    "explicacion": "Las funciones se definen con `def`: `def saludar(nombre): print('Hola', nombre)`. Permiten organizar y reutilizar código."
-                },
-                {
-                    "id": "d2",
-                    "title": "Parámetros y retorno",
-                    "explicacion": "Las funciones pueden recibir parámetros y devolver valores con `return`: `def sumar(a, b): return a + b`."
-                },
-                {
-                    "id": "d3",
-                    "title": "Módulos y librerías",
-                    "explicacion": "Python permite importar módulos con `import math` o `from math import sqrt`. Esto extiende la funcionalidad de tu código sin reinventar la rueda."
-                }
-            ],
-            "video": "",
-            "dato": "Funciones y módulos hacen que tu código sea más limpio, modular y mantenible."
+          "id": "a4",
+          "title": "El intérprete interactivo y el REPL",
+          "explicacion": "Python incluye un modo interactivo (REPL: Read–Eval–Print–Loop) que permite probar código en tiempo real. Es ideal para aprender, depurar y explorar funciones rápidamente. Solo debes abrir la consola y escribir `python` para comenzar."
         },
         {
-            "id": 5,
-            "title": "Listas, tuplas y diccionarios",
-            "description": "Aprenderás a manejar colecciones de datos y estructuras complejas.",
-            "lecciones": [
-                {
-                    "id": "e1",
-                    "title": "Listas",
-                    "explicacion": "Las listas (`list`) almacenan elementos ordenados y son mutables: `frutas = ['manzana', 'banana']`. Métodos comunes: `append()`, `pop()`, `sort()`."
-                },
-                {
-                    "id": "e2",
-                    "title": "Tuplas",
-                    "explicacion": "Las tuplas (`tuple`) son colecciones ordenadas pero inmutables: `coordenadas = (10, 20)`."
-                },
-                {
-                    "id": "e3",
-                    "title": "Diccionarios",
-                    "explicacion": "Los diccionarios (`dict`) almacenan pares `clave: valor`: `persona = {'nombre': 'Angelo', 'edad': 14}`. Se accede con `persona['nombre']`."
-                }
-            ],
-            "video": "",
-            "dato": "Estas estructuras permiten organizar datos de manera eficiente y accesible."
+          "id": "a5",
+          "title": "Tu primer programa en Python",
+          "explicacion": "El clásico `print('Hola Mundo')` marca el inicio. En esta lección entenderás la estructura básica de un script Python, cómo guardarlo con extensión `.py` y cómo ejecutarlo desde tu entorno. Este paso simboliza tu entrada al mundo de la programación real."
         },
         {
-            "id": 6,
-            "title": "Python avanzado y buenas prácticas",
-            "description": "Explora Python moderno y aprende a escribir código limpio y profesional.",
-            "lecciones": [
-                {
-                    "id": "f1",
-                    "title": "Comprensión de listas",
-                    "explicacion": "Una forma rápida y elegante de crear listas: `cuadrados = [x**2 for x in range(5)]`."
-                },
-                {
-                    "id": "f2",
-                    "title": "Manejo de errores",
-                    "explicacion": "Con `try`, `except` puedes controlar errores y evitar que tu programa se detenga inesperadamente."
-                },
-                {
-                    "id": "f3",
-                    "title": "Buenas prácticas",
-                    "explicacion": "Escribir código limpio, usar nombres descriptivos, comentarios y mantener modularidad asegura que tu código sea profesional y fácil de mantener."
-                }
-            ],
-            "video": "",
-            "dato": "Python moderno, limpio y organizado es la clave para proyectos profesionales y escalables."
+          "id": "a6",
+          "title": "El Zen de Python",
+          "explicacion": "Python tiene una filosofía de diseño llamada 'El Zen de Python', accesible escribiendo `import this`. Enseña principios como la claridad, la simplicidad y la legibilidad. Estos valores definen la forma en que los desarrolladores escriben código Python profesional."
         }
-    ]
+      ],
+      "video": "",
+      "dato": "Python combina potencia y elegancia. Aprenderlo correctamente desde el inicio te dará una base sólida para cualquier carrera tecnológica."
+    },
+    {
+      "id": 2,
+      "title": "Variables, tipos de datos y operadores",
+      "description": "Aprenderás a manejar la información dentro de tu programa: cómo guardar, modificar, operar y transformar datos con precisión y eficiencia.",
+      "lecciones": [
+        {
+          "id": "b1",
+          "title": "Variables y asignación dinámica",
+          "explicacion": "Python no requiere declarar el tipo de las variables. Su tipado dinámico detecta automáticamente el tipo de dato asignado. Ejemplo: `nombre = 'Angelo'`, `edad = 14`. La asignación múltiple y el desempaquetado (`x, y = y, x`) hacen el código más elegante."
+        },
+        {
+          "id": "b2",
+          "title": "Tipos de datos primitivos",
+          "explicacion": "Los tipos primitivos en Python incluyen enteros (`int`), flotantes (`float`), cadenas (`str`), booleanos (`bool`) y nulos (`NoneType`). Cada tipo tiene comportamientos y operaciones distintas. Conocerlos te permitirá controlar tus datos con precisión."
+        },
+        {
+          "id": "b3",
+          "title": "Operadores aritméticos y de asignación",
+          "explicacion": "Los operadores aritméticos (`+`, `-`, `*`, `/`, `//`, `%`, `**`) permiten realizar cálculos. Los de asignación (`=`, `+=`, `-=`) actualizan valores de variables de forma eficiente. Comprender su precedencia evita errores lógicos."
+        },
+        {
+          "id": "b4",
+          "title": "Operadores lógicos y de comparación",
+          "explicacion": "Python usa operadores de comparación (`==`, `!=`, `>`, `<`, `>=`, `<=`) y lógicos (`and`, `or`, `not`) para crear expresiones booleanas. Combinarlos correctamente es la base de la toma de decisiones en tus programas."
+        },
+        {
+          "id": "b5",
+          "title": "Conversión y coerción de tipos",
+          "explicacion": "Puedes convertir tipos explícitamente usando funciones como `int()`, `float()`, `str()` o `bool()`. También aprenderás sobre coerción implícita, cuando Python ajusta tipos durante operaciones mixtas. Saber cuándo ocurre evita resultados inesperados."
+        },
+        {
+          "id": "b6",
+          "title": "Entrada y salida de datos",
+          "explicacion": "La función `input()` permite recibir datos del usuario, y `print()` los muestra en pantalla. Aprenderás a formatear salidas con f-strings y a manipular texto para mejorar la interacción con el usuario."
+        }
+      ],
+      "video": "",
+      "dato": "Dominar variables y operadores es el primer paso hacia la programación algorítmica. Todo programa se basa en datos y su transformación."
+    },
+    {
+      "id": 3,
+      "title": "Control de flujo: Condicionales y bucles",
+      "description": "Aprende a controlar el flujo de ejecución en tus programas, tomar decisiones lógicas y repetir tareas de manera eficiente con estructuras de control.",
+      "lecciones": [
+        {
+          "id": "c1",
+          "title": "Estructuras condicionales básicas (if, elif, else)",
+          "explicacion": "Las condicionales permiten ejecutar bloques de código dependiendo de una condición. Ejemplo: `if edad >= 18: print('Mayor de edad') else: print('Menor')`. Son esenciales para cualquier tipo de lógica en programación."
+        },
+        {
+          "id": "c2",
+          "title": "Condicionales anidadas y operadores ternarios",
+          "explicacion": "Puedes anidar condicionales para crear decisiones complejas o usar expresiones ternarias (`x if cond else y`) para simplificar código. Es importante mantener la legibilidad, principio fundamental de Python."
+        },
+        {
+          "id": "c3",
+          "title": "El bucle for y la función range()",
+          "explicacion": "El bucle `for` recorre elementos en secuencias. Con `range()` puedes crear iteraciones numéricas fácilmente: `for i in range(5): print(i)`. Es fundamental para recorrer listas, tuplas o cadenas."
+        },
+        {
+          "id": "c4",
+          "title": "El bucle while y control de ejecución",
+          "explicacion": "El bucle `while` ejecuta código mientras se cumpla una condición. Es útil para procesos indeterminados. Ejemplo: `while intentos < 3: intentos += 1`. Aprenderás también a prevenir bucles infinitos."
+        },
+        {
+          "id": "c5",
+          "title": "Palabras clave break, continue y pass",
+          "explicacion": "Estas instrucciones controlan el flujo dentro de los bucles. `break` detiene la iteración, `continue` salta a la siguiente, y `pass` actúa como marcador de posición sin ejecutar nada. Son claves en la lógica de control avanzada."
+        },
+        {
+          "id": "c6",
+          "title": "Bucles anidados y lógica iterativa compleja",
+          "explicacion": "Aprenderás a combinar múltiples bucles para procesar estructuras de datos multidimensionales. Ejemplo: recorrer listas dentro de listas o generar patrones lógicos más avanzados."
+        }
+      ],
+      "video": "",
+      "dato": "Dominar el control de flujo te permite escribir programas inteligentes y adaptativos, capaces de responder a múltiples escenarios de forma automática."
+    },
+    {
+      "id": 4,
+      "title": "Funciones, parámetros y modularidad",
+      "description": "Aprende a crear funciones reutilizables, a trabajar con parámetros, valores de retorno y a estructurar tu código en módulos para mantener proyectos organizados.",
+      "lecciones": [
+        {
+          "id": "d1",
+          "title": "Definición y sintaxis de una función",
+          "explicacion": "Las funciones se definen con `def`. Ejemplo: `def saludar(nombre): print('Hola', nombre)`. Permiten agrupar instrucciones que se ejecutan juntas. Son el bloque fundamental de la programación estructurada."
+        },
+        {
+          "id": "d2",
+          "title": "Parámetros y argumentos",
+          "explicacion": "Los parámetros son variables que reciben valores al llamar una función. Python permite parámetros posicionales, nombrados, con valores por defecto y con argumentos variables (`*args`, `**kwargs`)."
+        },
+        {
+          "id": "d3",
+          "title": "Valores de retorno y funciones puras",
+          "explicacion": "Una función puede devolver resultados con `return`. Ejemplo: `def sumar(a, b): return a + b`. Las funciones puras no alteran variables externas, lo que mejora la confiabilidad del código."
+        },
+        {
+          "id": "d4",
+          "title": "Ámbito y ciclo de vida de las variables",
+          "explicacion": "El alcance de las variables puede ser local o global. Python crea espacios de nombres independientes dentro de funciones, lo que evita conflictos y errores lógicos."
+        },
+        {
+          "id": "d5",
+          "title": "Funciones anidadas y lambda",
+          "explicacion": "Puedes definir funciones dentro de otras y usar funciones anónimas con `lambda`, ideales para operaciones simples: `lambda x: x**2`. Las lambdas son comunes en programación funcional."
+        },
+        {
+          "id": "d6",
+          "title": "Módulos y reutilización de código",
+          "explicacion": "Los módulos permiten organizar código en archivos separados. Se importan con `import` o `from ... import ...`. Ejemplo: `import math`, `from random import randint`. Favorecen la reutilización y mantenibilidad."
+        }
+      ],
+      "video": "",
+      "dato": "Las funciones te permiten escribir código limpio y reutilizable. Dominar su uso es esencial para construir proyectos escalables."
+    },
+    {
+      "id": 5,
+      "title": "Estructuras de datos: listas, tuplas, conjuntos y diccionarios",
+      "description": "Descubre cómo almacenar, manipular y organizar colecciones de datos complejas con las estructuras integradas de Python.",
+      "lecciones": [
+        {
+          "id": "e1",
+          "title": "Listas y sus operaciones básicas",
+          "explicacion": "Las listas son estructuras ordenadas y mutables. Ejemplo: `frutas = ['manzana', 'banana']`. Métodos: `append()`, `remove()`, `insert()`, `sort()`, `reverse()`. Son fundamentales en casi todo programa."
+        },
+        {
+          "id": "e2",
+          "title": "Tuplas y su inmutabilidad",
+          "explicacion": "Las tuplas (`tuple`) son similares a las listas pero no pueden modificarse. Ejemplo: `coordenadas = (10, 20)`. Su inmutabilidad las hace ideales para datos constantes y seguros."
+        },
+        {
+          "id": "e3",
+          "title": "Conjuntos (sets) y operaciones matemáticas",
+          "explicacion": "Los conjuntos (`set`) son colecciones no ordenadas y sin duplicados. Soportan operaciones como unión (`|`), intersección (`&`), diferencia (`-`) y diferencia simétrica (`^`)."
+        },
+        {
+          "id": "e4",
+          "title": "Diccionarios y sus claves dinámicas",
+          "explicacion": "Los diccionarios almacenan pares clave-valor: `persona = {'nombre': 'Angelo', 'edad': 14}`. Puedes iterar, modificar y eliminar claves dinámicamente."
+        },
+        {
+          "id": "e5",
+          "title": "Desempaquetado y comprensión de estructuras",
+          "explicacion": "Python permite desempacar colecciones: `nombre, edad = persona.values()`. Además, las comprensiones (`[x**2 for x in range(5)]`) generan estructuras en una sola línea."
+        },
+        {
+          "id": "e6",
+          "title": "Colecciones anidadas y estructuras mixtas",
+          "explicacion": "Puedes combinar estructuras: listas dentro de diccionarios, tuplas dentro de listas, etc. Estas combinaciones permiten modelar datos complejos de manera natural."
+        }
+      ],
+      "video": "",
+      "dato": "Dominar las estructuras de datos nativas de Python te da poder para representar y procesar cualquier tipo de información con eficiencia."
+    },
+    {
+      "id": 6,
+      "title": "Entrada, salida y manejo de archivos",
+      "description": "Aprende a leer, escribir y procesar información almacenada en archivos. Una habilidad esencial para cualquier programa real.",
+      "lecciones": [
+        {
+          "id": "f1",
+          "title": "Entrada y salida estándar",
+          "explicacion": "Con `input()` obtienes datos del usuario y con `print()` los presentas. Aprenderás a formatear salidas con f-strings y a validar entradas para mejorar la experiencia del usuario."
+        },
+        {
+          "id": "f2",
+          "title": "Lectura y escritura de archivos de texto",
+          "explicacion": "Usa `open('archivo.txt', 'r')` o `open('archivo.txt', 'w')` para leer y escribir. Siempre cierra archivos con `close()` o usa `with open() as f:` para un manejo automático y seguro."
+        },
+        {
+          "id": "f3",
+          "title": "Modos de apertura y punteros de archivo",
+          "explicacion": "Python permite abrir archivos en modo lectura (`r`), escritura (`w`), anexar (`a`) o binario (`b`). Los punteros controlan la posición de lectura y escritura dentro del archivo."
+        },
+        {
+          "id": "f4",
+          "title": "Lectura y escritura de archivos CSV",
+          "explicacion": "El módulo `csv` permite manipular datos tabulares. Ejemplo: `import csv`. Con `csv.reader` y `csv.writer` puedes procesar fácilmente archivos de datos estructurados."
+        },
+        {
+          "id": "f5",
+          "title": "Archivos JSON y serialización de datos",
+          "explicacion": "El módulo `json` permite convertir estructuras de Python a texto JSON (`json.dump()`, `json.load()`). Es esencial para APIs y comunicación entre sistemas."
+        },
+        {
+          "id": "f6",
+          "title": "Manejo de errores de archivo",
+          "explicacion": "Aprende a manejar excepciones como `FileNotFoundError` o `IOError` con bloques `try/except`. Así evitas caídas inesperadas en tus programas que interactúan con archivos."
+        }
+      ],
+      "video": "",
+      "dato": "El manejo de archivos convierte tus programas en herramientas útiles para el mundo real. Casi todo software profesional interactúa con datos externos."
+    },
+    {
+      "id": 7,
+      "title": "Programación Orientada a Objetos (POO)",
+      "description": "Aprende los principios de la programación orientada a objetos: clases, objetos, herencia y encapsulamiento. La base del desarrollo profesional en Python.",
+      "lecciones": [
+        {
+          "id": "g1",
+          "title": "Conceptos fundamentales de la POO",
+          "explicacion": "La POO organiza el código en clases y objetos que modelan entidades del mundo real. Conceptos clave: clase, objeto, atributo y método. Promueve el reuso y la claridad del código."
+        },
+        {
+          "id": "g2",
+          "title": "Definición de clases y creación de objetos",
+          "explicacion": "Una clase se define con `class`. Ejemplo: `class Persona:`. Los objetos son instancias de una clase: `p = Persona()`. Aprenderás la importancia del método `__init__` para inicializar atributos."
+        },
+        {
+          "id": "g3",
+          "title": "Atributos y métodos de instancia",
+          "explicacion": "Los atributos son variables dentro de una clase; los métodos son funciones. Se acceden mediante `self`. Ejemplo: `self.nombre = nombre`. Representan el estado y comportamiento del objeto."
+        },
+        {
+          "id": "g4",
+          "title": "Encapsulamiento y métodos especiales",
+          "explicacion": "Python no tiene encapsulamiento estricto, pero usa convenciones: `_privado` o `__oculto`. Los métodos especiales como `__str__`, `__len__` o `__repr__` personalizan el comportamiento de las clases."
+        },
+        {
+          "id": "g5",
+          "title": "Herencia y polimorfismo",
+          "explicacion": "Una clase puede heredar de otra: `class Estudiante(Persona):`. La herencia permite reutilizar código, y el polimorfismo permite redefinir comportamientos en las clases hijas."
+        },
+        {
+          "id": "g6",
+          "title": "Composición y clases anidadas",
+          "explicacion": "En lugar de heredar, una clase puede contener instancias de otras, lo que se conoce como composición. Es útil para modelar relaciones complejas de forma más flexible."
+        }
+      ],
+      "video": "",
+      "dato": "La POO es el corazón de Python profesional. Permite crear sistemas grandes, mantenibles y extensibles."
+    },
+    {
+      "id": 8,
+      "title": "Manejo de errores y excepciones",
+      "description": "Aprende a manejar y anticipar errores para que tus programas sean robustos, seguros y no se detengan inesperadamente.",
+      "lecciones": [
+        {
+          "id": "h1",
+          "title": "Errores comunes en Python",
+          "explicacion": "Existen errores de sintaxis, lógicos y de ejecución. Ejemplo: `SyntaxError`, `TypeError`, `ValueError`. Identificarlos y entenderlos es vital para depurar programas."
+        },
+        {
+          "id": "h2",
+          "title": "Bloques try, except y finally",
+          "explicacion": "La estructura básica es: `try: ... except: ... finally: ...`. Permite capturar errores y ejecutar código alternativo o de limpieza. Ejemplo: cerrar archivos, liberar memoria, etc."
+        },
+        {
+          "id": "h3",
+          "title": "Manejo múltiple de excepciones",
+          "explicacion": "Puedes capturar tipos específicos de errores: `except ValueError:` o `except (TypeError, ZeroDivisionError):`. Esto hace el control más preciso y seguro."
+        },
+        {
+          "id": "h4",
+          "title": "Generar excepciones personalizadas",
+          "explicacion": "Con `raise` puedes lanzar tus propias excepciones. Ejemplo: `raise ValueError('Edad no válida')`. Ideal para validar datos o reglas de negocio específicas."
+        },
+        {
+          "id": "h5",
+          "title": "Creación de clases de excepciones propias",
+          "explicacion": "Puedes crear tus propias excepciones heredando de `Exception`. Ejemplo: `class MiError(Exception): pass`. Esto permite definir errores personalizados para tus sistemas."
+        },
+        {
+          "id": "h6",
+          "title": "Depuración y logging de errores",
+          "explicacion": "El módulo `logging` permite registrar errores, advertencias e información en archivos o consola. Es clave para monitorear el comportamiento de aplicaciones en producción."
+        }
+      ],
+      "video": "",
+      "dato": "Un buen programador no evita errores, los maneja. El control de excepciones es señal de código maduro y profesional."
+    },
+    {
+      "id": 9,
+      "title": "Colecciones avanzadas y manipulación de datos",
+      "description": "Profundiza en estructuras más potentes como listas por comprensión, colecciones del módulo `collections` y manipulación avanzada de datos.",
+      "lecciones": [
+        {
+          "id": "i1",
+          "title": "Comprensiones de listas, conjuntos y diccionarios",
+          "explicacion": "Permiten crear colecciones en una sola línea. Ejemplo: `[x**2 for x in range(10) if x%2==0]`. También existen comprensiones de conjuntos `{}` y diccionarios `{k:v for ...}`."
+        },
+        {
+          "id": "i2",
+          "title": "Enumeración e iteración con enumerate() y zip()",
+          "explicacion": "`enumerate()` devuelve índice y valor al iterar. `zip()` combina múltiples listas en una sola secuencia. Son herramientas poderosas para manejar datos correlacionados."
+        },
+        {
+          "id": "i3",
+          "title": "El módulo collections y sus estructuras especializadas",
+          "explicacion": "`collections` incluye tipos avanzados: `Counter`, `defaultdict`, `namedtuple`, `deque`. Permiten optimizar rendimiento y legibilidad del código."
+        },
+        {
+          "id": "i4",
+          "title": "Iteradores y generadores",
+          "explicacion": "Los iteradores permiten recorrer elementos uno a uno. Los generadores (`yield`) crean secuencias perezosas que ahorran memoria y mejoran el rendimiento en grandes volúmenes de datos."
+        },
+        {
+          "id": "i5",
+          "title": "Expresiones generadoras y lazy evaluation",
+          "explicacion": "Una expresión generadora `(x**2 for x in range(1000))` se evalúa bajo demanda, ideal para manejar datos masivos sin cargarlos todos en memoria."
+        },
+        {
+          "id": "i6",
+          "title": "Funciones built-in de alto nivel",
+          "explicacion": "Funciones como `map()`, `filter()` y `reduce()` (de `functools`) aplican transformaciones masivas a colecciones. Aprenderás a combinarlas con funciones lambda para escribir código funcional y limpio."
+        }
+      ],
+      "video": "",
+      "dato": "Las colecciones avanzadas y la programación funcional hacen que tu código sea más rápido, elegante y Pythonic."
+    },
+    {
+      "id": 10,
+      "title": "Programación funcional en Python",
+      "description": "Domina el paradigma funcional: funciones puras, inmutabilidad, uso de map, filter, reduce y funciones de orden superior. Escribe código más limpio y expresivo.",
+      "lecciones": [
+        {
+          "id": "j1",
+          "title": "Conceptos de programación funcional",
+          "explicacion": "La programación funcional evita los efectos secundarios. Se basa en funciones puras, datos inmutables y expresiones sin estados. Python permite combinar lo mejor de la POO y la funcional."
+        },
+        {
+          "id": "j2",
+          "title": "Funciones de orden superior",
+          "explicacion": "Una función de orden superior recibe o devuelve otra función. Ejemplo: `def aplicar(f, x): return f(x)`. Esto permite crear código flexible y reutilizable."
+        },
+        {
+          "id": "j3",
+          "title": "Uso de map(), filter() y reduce()",
+          "explicacion": "`map()` aplica una función a cada elemento, `filter()` selecciona los que cumplen una condición y `reduce()` combina todos los valores en uno solo. Son potentes herramientas para procesamiento de datos."
+        },
+        {
+          "id": "j4",
+          "title": "Funciones lambda y expresiones anónimas",
+          "explicacion": "Las funciones `lambda` son útiles para tareas cortas. Ejemplo: `lambda x: x + 1`. Pueden usarse con `map()`, `filter()` o `sorted()` para simplificar el código."
+        },
+        {
+          "id": "j5",
+          "title": "Inmutabilidad y efectos secundarios",
+          "explicacion": "En la programación funcional se evitan los efectos secundarios. En Python, aunque las estructuras mutables existen, puedes aplicar principios funcionales para evitar comportamientos impredecibles."
+        },
+        {
+          "id": "j6",
+          "title": "Composición de funciones y pipelines",
+          "explicacion": "Puedes encadenar funciones para formar pipelines de procesamiento. Esto crea un flujo claro de transformación de datos, similar a cómo funcionan las tuberías en Unix o en frameworks de datos."
+        }
+      ],
+      "video": "",
+      "dato": "La programación funcional mejora la claridad, la mantenibilidad y el rendimiento del código. Es clave para trabajar con grandes volúmenes de datos."
+    },
+    {
+      "id": 11,
+      "title": "Decoradores y funciones avanzadas",
+      "description": "Aprende a usar decoradores para modificar el comportamiento de funciones y clases sin alterar su código original. Una de las herramientas más potentes de Python.",
+      "lecciones": [
+        {
+          "id": "k1",
+          "title": "Qué son los decoradores y cómo funcionan",
+          "explicacion": "Un decorador es una función que envuelve otra para ampliar o modificar su comportamiento. Se definen con `@nombre_decorador` sobre la función objetivo."
+        },
+        {
+          "id": "k2",
+          "title": "Funciones internas y closures",
+          "explicacion": "Una función interna puede recordar variables de su entorno incluso después de que el exterior haya terminado. Este concepto se conoce como 'closure' y es la base de los decoradores."
+        },
+        {
+          "id": "k3",
+          "title": "Creación de decoradores personalizados",
+          "explicacion": "Puedes crear tus propios decoradores para validar datos, medir tiempos o aplicar seguridad. Ejemplo: `@verificar_login`, `@medir_tiempo`."
+        },
+        {
+          "id": "k4",
+          "title": "Decoradores con argumentos",
+          "explicacion": "Los decoradores pueden aceptar parámetros para comportamientos dinámicos. Esto se logra con funciones anidadas adicionales que capturan los argumentos del decorador."
+        },
+        {
+          "id": "k5",
+          "title": "Uso de functools.wraps y buenas prácticas",
+          "explicacion": "`functools.wraps` conserva la metadata (nombre, docstring) de la función original decorada. Es una buena práctica para mantener código limpio y documentado."
+        },
+        {
+          "id": "k6",
+          "title": "Aplicaciones prácticas de los decoradores",
+          "explicacion": "Verás decoradores reales como `@staticmethod`, `@classmethod`, `@property` y decoradores personalizados para logging, autenticación o control de ejecución."
+        }
+      ],
+      "video": "",
+      "dato": "Los decoradores son una herramienta avanzada que transforma funciones comunes en componentes sofisticados, reutilizables y profesionales."
+    },
+    {
+      "id": 12,
+      "title": "Fechas, horas y manejo de tiempo",
+      "description": "Domina el manejo del tiempo, fechas y zonas horarias en Python. Aprende a formatear, calcular y manipular valores temporales de forma profesional.",
+      "lecciones": [
+        {
+          "id": "l1",
+          "title": "El módulo datetime y sus componentes",
+          "explicacion": "`datetime` proporciona clases para manejar fechas y tiempos. Ejemplo: `from datetime import datetime`. Puedes obtener la fecha actual con `datetime.now()`."
+        },
+        {
+          "id": "l2",
+          "title": "Formateo de fechas con strftime y strptime",
+          "explicacion": "Convierte fechas a cadenas con `strftime()` y viceversa con `strptime()`. Ejemplo: `fecha.strftime('%d/%m/%Y')` → '18/10/2025'."
+        },
+        {
+          "id": "l3",
+          "title": "Cálculos y diferencias temporales",
+          "explicacion": "Puedes restar fechas para obtener diferencias con `timedelta`. Ejemplo: `diferencia = fecha2 - fecha1`. Ideal para calcular duraciones o vencimientos."
+        },
+        {
+          "id": "l4",
+          "title": "Uso de zonas horarias y UTC",
+          "explicacion": "El módulo `pytz` o `zoneinfo` permite ajustar zonas horarias correctamente. Es esencial para aplicaciones globales que manejan usuarios en distintos países."
+        },
+        {
+          "id": "l5",
+          "title": "Medición de tiempos de ejecución",
+          "explicacion": "Puedes medir cuánto tarda en ejecutarse una porción de código usando `time.time()` o el módulo `timeit`. Esto es vital para optimización de rendimiento."
+        },
+        {
+          "id": "l6",
+          "title": "Simulación de fechas y pruebas con tiempo",
+          "explicacion": "En testing, puedes simular fechas con librerías como `freezegun` o cambiar el reloj del sistema virtualmente. Esto facilita pruebas en sistemas dependientes del tiempo."
+        }
+      ],
+      "video": "",
+      "dato": "El manejo correcto del tiempo es clave para cualquier sistema: desde una web hasta una aplicación financiera o científica."
+    },
+    {
+      "id": 13,
+      "title": "Manejo avanzado de archivos",
+      "description": "Aprende a manipular archivos de texto, CSV, JSON y binarios. Comprende cómo leer, escribir y procesar datos de forma eficiente y segura.",
+      "lecciones": [
+        {
+          "id": "m1",
+          "title": "Lectura y escritura de archivos de texto",
+          "explicacion": "Python permite manejar archivos fácilmente con `open()`. Ejemplo: `with open('datos.txt', 'r') as f: contenido = f.read()`. Este contexto garantiza que el archivo se cierre automáticamente."
+        },
+        {
+          "id": "m2",
+          "title": "Archivos CSV",
+          "explicacion": "Con el módulo `csv`, puedes leer y escribir archivos separados por comas. Ejemplo: `csv.reader()` y `csv.writer()` permiten manejar datos tabulares como hojas de cálculo."
+        },
+        {
+          "id": "m3",
+          "title": "Archivos JSON",
+          "explicacion": "Usa el módulo `json` para trabajar con estructuras de datos modernas. Ejemplo: `json.dump()` para guardar y `json.load()` para leer. Es ideal para intercambiar información entre sistemas."
+        },
+        {
+          "id": "m4",
+          "title": "Archivos binarios y pickle",
+          "explicacion": "Puedes guardar objetos Python de manera binaria con `pickle`. Ejemplo: `pickle.dump(obj, file)` y `pickle.load(file)`. Útil para serializar modelos o datos complejos."
+        },
+        {
+          "id": "m5",
+          "title": "Manejo de rutas y directorios",
+          "explicacion": "El módulo `os` y `pathlib` permiten crear, mover y eliminar archivos o carpetas. Ejemplo: `os.makedirs('carpeta')` o `Path('data').exists()`."
+        },
+        {
+          "id": "m6",
+          "title": "Buenas prácticas y seguridad en archivos",
+          "explicacion": "Evita rutas absolutas, usa `with open()` y valida entradas del usuario para prevenir vulnerabilidades. El manejo correcto de archivos protege tu sistema y tus datos."
+        }
+      ],
+      "video": "",
+      "dato": "Saber manejar archivos es esencial para cualquier aplicación: desde logs de servidores hasta almacenamiento de configuraciones."
+    },
+    {
+      "id": 14,
+      "title": "Bases de datos con Python y SQLite",
+      "description": "Aprende a conectar, consultar y administrar bases de datos con Python usando SQLite y librerías integradas. Comprende CRUD, transacciones y seguridad.",
+      "lecciones": [
+        {
+          "id": "n1",
+          "title": "Introducción a las bases de datos y SQLite",
+          "explicacion": "SQLite es una base de datos liviana integrada en Python. No necesita servidor y usa archivos `.db`. Perfecta para proyectos pequeños o medianos."
+        },
+        {
+          "id": "n2",
+          "title": "Conectarse a una base de datos",
+          "explicacion": "Usa `sqlite3.connect('base.db')` para establecer conexión y obtener un cursor con `connection.cursor()` para ejecutar consultas SQL."
+        },
+        {
+          "id": "n3",
+          "title": "Operaciones CRUD",
+          "explicacion": "Crea, lee, actualiza y elimina datos (Create, Read, Update, Delete) con sentencias SQL. Ejemplo: `cursor.execute('INSERT INTO usuarios VALUES (?, ?)', (nombre, edad))`."
+        },
+        {
+          "id": "n4",
+          "title": "Transacciones y commit/rollback",
+          "explicacion": "Usa `commit()` para guardar cambios y `rollback()` para revertirlos si ocurre un error. Esto mantiene la integridad de los datos."
+        },
+        {
+          "id": "n5",
+          "title": "Consultas avanzadas y joins",
+          "explicacion": "Puedes combinar tablas y filtrar resultados con SQL avanzado (`JOIN`, `WHERE`, `ORDER BY`). Ideal para análisis de datos relacionales."
+        },
+        {
+          "id": "n6",
+          "title": "Buenas prácticas de seguridad con SQL",
+          "explicacion": "Evita concatenar strings en consultas SQL. Usa parámetros (`?` o `%s`) para prevenir inyecciones SQL y mantener la seguridad del sistema."
+        }
+      ],
+      "video": "",
+      "dato": "Comprender SQL y su integración con Python abre las puertas al desarrollo backend y análisis de datos profesional."
+    },
+    {
+      "id": 15,
+      "title": "Consumo de APIs y solicitudes HTTP",
+      "description": "Aprende a comunicarte con servicios externos usando APIs REST. Envía y recibe datos JSON a través de la web con Python.",
+      "lecciones": [
+        {
+          "id": "o1",
+          "title": "Qué es una API y cómo funciona",
+          "explicacion": "Una API (Application Programming Interface) permite que dos sistemas se comuniquen mediante HTTP. Las APIs REST usan JSON para enviar datos de forma estructurada."
+        },
+        {
+          "id": "o2",
+          "title": "Uso del módulo requests",
+          "explicacion": "Con `requests`, puedes enviar peticiones `GET`, `POST`, `PUT` y `DELETE`. Ejemplo: `requests.get('https://api.github.com/users')`. Es simple y poderoso."
+        },
+        {
+          "id": "o3",
+          "title": "Envío y recepción de datos JSON",
+          "explicacion": "Usa `response.json()` para convertir la respuesta en un diccionario Python. Puedes enviar datos con `requests.post(url, json=datos)`."
+        },
+        {
+          "id": "o4",
+          "title": "Manejo de errores y códigos de estado",
+          "explicacion": "Verifica los códigos de estado HTTP (`200`, `404`, `500`). Usa `response.status_code` y `raise_for_status()` para gestionar errores correctamente."
+        },
+        {
+          "id": "o5",
+          "title": "Autenticación en APIs",
+          "explicacion": "Muchas APIs requieren tokens o claves de acceso. Se envían en encabezados con `headers={'Authorization': 'Bearer TOKEN'}`. Esto garantiza seguridad."
+        },
+        {
+          "id": "o6",
+          "title": "Creación de tu propia API con Flask",
+          "explicacion": "Con `Flask`, puedes crear tu propia API en pocas líneas. Ejemplo: `@app.route('/saludo')` retorna datos JSON. Ideal para proyectos backend simples."
+        }
+      ],
+      "video": "",
+      "dato": "El consumo y creación de APIs es una habilidad clave para integraciones modernas y desarrollo de software profesional."
+    },
+    {
+      "id": 16,
+      "title": "Testing y control de calidad en Python",
+      "description": "Aprende a probar tu código como un profesional. Usa frameworks de testing, mocks y automatiza tus pruebas para asegurar la calidad del software.",
+      "lecciones": [
+        {
+          "id": "p1",
+          "title": "Introducción al testing",
+          "explicacion": "El testing permite validar que el código funcione correctamente y prevenir errores. Existen diferentes tipos: unitario, de integración y de sistema."
+        },
+        {
+          "id": "p2",
+          "title": "Pruebas unitarias con unittest",
+          "explicacion": "El módulo `unittest` es parte del estándar de Python. Permite definir clases de prueba y métodos que verifican el comportamiento de funciones o clases."
+        },
+        {
+          "id": "p3",
+          "title": "Pytest: testing moderno y simple",
+          "explicacion": "`pytest` facilita las pruebas con menos código. Soporta fixtures, parametrización y detección automática de tests. Ideal para proyectos grandes."
+        },
+        {
+          "id": "p4",
+          "title": "Mocks y pruebas aisladas",
+          "explicacion": "Con `unittest.mock` puedes simular objetos o funciones para probar partes del sistema sin depender de componentes externos o APIs reales."
+        },
+        {
+          "id": "p5",
+          "title": "Cobertura de código y reportes",
+          "explicacion": "Herramientas como `coverage.py` permiten medir qué porcentaje del código está cubierto por pruebas. Así identificas zonas vulnerables."
+        },
+        {
+          "id": "p6",
+          "title": "Buenas prácticas de testing continuo",
+          "explicacion": "Integra tests en pipelines de CI/CD (por ejemplo, GitHub Actions) para validar cada cambio automáticamente antes de desplegar."
+        }
+      ],
+      "video": "",
+      "dato": "Probar tu código no es opcional, es profesional. Un buen testing evita bugs en producción y mejora la confianza del equipo."
+    },
+    {
+      "id": 17,
+      "title": "Automatización, concurrencia y rendimiento",
+      "description": "Domina el uso de hilos, procesos y automatización de tareas repetitivas con Python. Mejora el rendimiento de tus programas y sistemas.",
+      "lecciones": [
+        {
+          "id": "q1",
+          "title": "Automatización con Python",
+          "explicacion": "Python es ideal para automatizar tareas como limpieza de archivos, scraping, envío de correos o generación de reportes. Usa módulos como `os`, `shutil` y `smtplib`."
+        },
+        {
+          "id": "q2",
+          "title": "Uso de hilos con threading",
+          "explicacion": "El módulo `threading` permite ejecutar varias tareas al mismo tiempo dentro del mismo proceso. Ideal para operaciones I/O como descargas o scraping."
+        },
+        {
+          "id": "q3",
+          "title": "Multiprocesamiento y CPU-bound",
+          "explicacion": "Para tareas que requieren mucha CPU, usa `multiprocessing`. Cada proceso corre en su propio núcleo, maximizando el rendimiento."
+        },
+        {
+          "id": "q4",
+          "title": "Asyncio y programación asíncrona",
+          "explicacion": "`asyncio` permite escribir código asíncrono que aprovecha mejor los recursos sin bloquear el hilo principal. Ideal para servidores y bots."
+        },
+        {
+          "id": "q5",
+          "title": "Optimización y profiling de código",
+          "explicacion": "Usa `cProfile` y `timeit` para detectar cuellos de botella y optimizar funciones. Pequeños ajustes pueden mejorar drásticamente la velocidad."
+        },
+        {
+          "id": "q6",
+          "title": "Automatización de sistemas reales",
+          "explicacion": "Aprende a automatizar tareas del sistema operativo, como limpieza de logs, backups o integración con APIs externas. Python puede hacerlo todo."
+        }
+      ],
+      "video": "",
+      "dato": "Saber automatizar y optimizar código te convierte en un verdadero ingeniero de software. La eficiencia también es una forma de elegancia."
+    },
+    {
+      "id": 18,
+      "title": "Proyectos finales y Python en el mundo real",
+      "description": "Aplica todo lo aprendido creando proyectos reales: desde web hasta inteligencia artificial. Aprende a desplegar tus apps y trabajar como profesional.",
+      "lecciones": [
+        {
+          "id": "r1",
+          "title": "Proyecto 1: Automatizador de tareas con Python",
+          "explicacion": "Crea un script que lea archivos, procese datos y envíe reportes por correo. Usa módulos estándar para automatizar procesos cotidianos."
+        },
+        {
+          "id": "r2",
+          "title": "Proyecto 2: API REST con Flask",
+          "explicacion": "Desarrolla una API REST completa que gestione usuarios, use SQLite y devuelva datos en formato JSON. Aprende rutas, métodos HTTP y respuesta JSON."
+        },
+        {
+          "id": "r3",
+          "title": "Proyecto 3: Análisis de datos con Pandas y Matplotlib",
+          "explicacion": "Usa `pandas` para procesar datasets reales y `matplotlib` para graficar resultados. Aprende visualización y análisis exploratorio de datos."
+        },
+        {
+          "id": "r4",
+          "title": "Proyecto 4: Chatbot con IA y NLP",
+          "explicacion": "Crea un chatbot con `nltk` o `transformers`. Aprende procesamiento de lenguaje natural y lógica de conversación con Python moderno."
+        },
+        {
+          "id": "r5",
+          "title": "Proyecto 5: Web scraping profesional",
+          "explicacion": "Extrae información de páginas web usando `requests` y `BeautifulSoup`. Almacena los resultados en una base de datos y genera reportes automáticos."
+        },
+        {
+          "id": "r6",
+          "title": "Despliegue y portafolio profesional",
+          "explicacion": "Aprende a desplegar tus proyectos en servidores, usar Git y documentar tu código. Cierra el curso con un portafolio profesional de Python."
+        }
+      ],
+      "video": "",
+      "dato": "La práctica hace al maestro. Estos proyectos consolidan todo lo aprendido y te preparan para trabajar profesionalmente con Python."
+    }
+  ]
 }

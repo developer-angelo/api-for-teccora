@@ -1,151 +1,709 @@
 {
-    "id": "php",
-    "name": "Curso intensivo de PHP",
-    "description": "Aprende PHP, el lenguaje de programación del lado del servidor que impulsa millones de sitios web, incluyendo WordPress y plataformas dinámicas 🖥️.",
-    "modulos": [
+  "id": "php",
+  "name": "Curso intensivo de PHP",
+  "description": "Aprende PHP, el lenguaje de programación del lado del servidor que impulsa millones de sitios web, incluyendo WordPress y plataformas dinámicas 🖥️.",
+  "modulos": [
+    {
+      "id": 1,
+      "title": "Introducción a PHP",
+      "description": "Conocerás qué es PHP, su historia, características y cómo integrarlo en tus proyectos web con un servidor local o remoto.",
+      "lecciones": [
         {
-            "id": 1,
-            "title": "Introducción a PHP",
-            "description": "Conocerás qué es PHP, su historia y cómo integrarlo en tus proyectos web.",
-            "lecciones": [
-                {
-                    "id": "a1",
-                    "title": "¿Qué es PHP?",
-                    "explicacion": "PHP (Hypertext Preprocessor) es un lenguaje de programación de código abierto usado principalmente para desarrollo web del lado del servidor. Permite crear páginas dinámicas, manejar bases de datos y procesar formularios."
-                },
-                {
-                    "id": "a2",
-                    "title": "Historia de PHP",
-                    "explicacion": "Creado por Rasmus Lerdorf en 1994, PHP ha evolucionado hasta convertirse en uno de los lenguajes más usados en desarrollo web, especialmente para CMS y aplicaciones web dinámicas."
-                },
-                {
-                    "id": "a3",
-                    "title": "Instalación y entorno",
-                    "explicacion": "Para usar PHP necesitas un servidor local como XAMPP, WAMP o MAMP, o un servidor en la nube. Los archivos PHP se ejecutan en el servidor y generan HTML que el navegador interpreta."
-                }
-            ],
-            "video": "",
-            "dato": "PHP es perfecto para crear sitios web dinámicos que interactúan con bases de datos y usuarios."
+          "id": "a1",
+          "title": "¿Qué es PHP y para qué sirve?",
+          "explicacion": "PHP (Hypertext Preprocessor) es un lenguaje de programación del lado del servidor diseñado para generar contenido dinámico. Permite conectar aplicaciones con bases de datos, gestionar sesiones y crear sitios interactivos."
         },
         {
-            "id": 2,
-            "title": "Variables, tipos y operadores",
-            "description": "Aprenderás a almacenar datos en PHP y realizar operaciones básicas.",
-            "lecciones": [
-                {
-                    "id": "b1",
-                    "title": "Variables en PHP",
-                    "explicacion": "En PHP todas las variables comienzan con `$`, por ejemplo: `$nombre = 'Angelo';`. No es necesario declarar el tipo explícitamente."
-                },
-                {
-                    "id": "b2",
-                    "title": "Tipos de datos",
-                    "explicacion": "PHP maneja `string`, `int`, `float`, `bool`, `array`, `object` y `NULL`. Los arrays y objetos permiten manejar datos complejos."
-                },
-                {
-                    "id": "b3",
-                    "title": "Operadores",
-                    "explicacion": "Incluyen aritméticos (`+`, `-`, `*`, `/`, `%`), de comparación (`==`, `===`, `!=`), lógicos (`&&`, `||`, `!`) y de asignación (`=`, `+=`, `-=`)."
-                }
-            ],
-            "video": "",
-            "dato": "Entender variables, tipos y operadores es esencial para cualquier lógica en PHP."
+          "id": "a2",
+          "title": "Historia y evolución de PHP",
+          "explicacion": "PHP fue creado por Rasmus Lerdorf en 1994. Inicialmente era un conjunto de scripts en C para rastrear visitas web. Con el tiempo se convirtió en un lenguaje robusto con orientación a objetos y frameworks modernos."
         },
         {
-            "id": 3,
-            "title": "Condicionales y bucles",
-            "description": "Controla el flujo de ejecución con decisiones y repeticiones.",
-            "lecciones": [
-                {
-                    "id": "c1",
-                    "title": "Condicionales",
-                    "explicacion": "PHP permite usar `if`, `elseif` y `else` para ejecutar código según condiciones: `if($edad >= 18) { echo 'Mayor'; } else { echo 'Menor'; }`."
-                },
-                {
-                    "id": "c2",
-                    "title": "Bucles for y while",
-                    "explicacion": "Los bucles `for`, `while` y `foreach` permiten repetir acciones. `foreach` es útil para recorrer arrays: `foreach($frutas as $fruta) { echo $fruta; }`."
-                },
-                {
-                    "id": "c3",
-                    "title": "Break y continue",
-                    "explicacion": "`break` detiene un bucle, y `continue` salta a la siguiente iteración. Útiles para controlar flujo dentro de loops."
-                }
-            ],
-            "video": "",
-            "dato": "Condicionales y bucles son la base para crear lógica dinámica en PHP."
+          "id": "a3",
+          "title": "Cómo funciona PHP en el servidor",
+          "explicacion": "PHP se ejecuta en el servidor antes de enviar el HTML al navegador. El motor de PHP interpreta el código y genera contenido dinámico que luego se muestra al usuario."
         },
         {
-            "id": 4,
-            "title": "Funciones y manejo de formularios",
-            "description": "Aprenderás a organizar código en funciones y procesar datos enviados por usuarios.",
-            "lecciones": [
-                {
-                    "id": "d1",
-                    "title": "Funciones en PHP",
-                    "explicacion": "Se definen con `function nombre($parametros) { }`. Permiten encapsular código y reutilizarlo fácilmente."
-                },
-                {
-                    "id": "d2",
-                    "title": "Parámetros y retorno",
-                    "explicacion": "Las funciones pueden recibir parámetros y devolver valores con `return`: `function sumar($a, $b) { return $a + $b; }`."
-                },
-                {
-                    "id": "d3",
-                    "title": "Procesando formularios",
-                    "explicacion": "PHP procesa datos enviados desde formularios HTML usando `$_GET` y `$_POST`. Ejemplo: `$nombre = $_POST['nombre']; echo 'Hola '.$nombre;`."
-                }
-            ],
-            "video": "",
-            "dato": "Funciones y formularios son clave para crear aplicaciones web interactivas."
+          "id": "a4",
+          "title": "Instalación y entorno local",
+          "explicacion": "Para ejecutar PHP necesitas un entorno como XAMPP, WAMP o MAMP. Estos incluyen Apache, MySQL y PHP. Coloca tus archivos en la carpeta `htdocs` para servirlos localmente."
         },
         {
-            "id": 5,
-            "title": "Arrays y manejo de datos",
-            "description": "Aprenderás a manejar colecciones de datos y trabajar con estructuras más complejas.",
-            "lecciones": [
-                {
-                    "id": "e1",
-                    "title": "Arrays",
-                    "explicacion": "Los arrays almacenan múltiples valores: `$frutas = array('manzana','banana');`. Métodos comunes incluyen `count()`, `array_push()`, `array_merge()`."
-                },
-                {
-                    "id": "e2",
-                    "title": "Arrays asociativos",
-                    "explicacion": "Permiten usar claves personalizadas: `$persona = array('nombre'=>'Angelo','edad'=>14); echo $persona['nombre'];`."
-                },
-                {
-                    "id": "e3",
-                    "title": "Iterando arrays",
-                    "explicacion": "Usa `foreach` para recorrer arrays fácilmente: `foreach($frutas as $fruta) { echo $fruta; }`."
-                }
-            ],
-            "video": "",
-            "dato": "Arrays y arrays asociativos permiten organizar y acceder a datos de forma eficiente."
+          "id": "a5",
+          "title": "Estructura básica de un archivo PHP",
+          "explicacion": "El código PHP se encierra entre etiquetas `<?php ... ?>`. Ejemplo: `<?php echo 'Hola Mundo'; ?>`. Puedes combinarlo con HTML para generar páginas dinámicas."
         },
         {
-            "id": 6,
-            "title": "PHP avanzado y buenas prácticas",
-            "description": "Explora técnicas modernas, seguridad y buenas prácticas para crear aplicaciones robustas.",
-            "lecciones": [
-                {
-                    "id": "f1",
-                    "title": "Manejo de errores",
-                    "explicacion": "PHP permite controlar errores con `try`, `catch` y funciones como `error_reporting()` y `set_error_handler()`."
-                },
-                {
-                    "id": "f2",
-                    "title": "Conexión a bases de datos",
-                    "explicacion": "Se puede conectar a MySQL usando PDO o MySQLi: `$pdo = new PDO('mysql:host=localhost;dbname=miDB','usuario','clave');`."
-                },
-                {
-                    "id": "f3",
-                    "title": "Buenas prácticas",
-                    "explicacion": "Escribir código limpio, modular, seguro y comentado garantiza proyectos mantenibles y profesionales."
-                }
-            ],
-            "video": "",
-            "dato": "PHP moderno, seguro y bien estructurado permite crear aplicaciones web robustas y profesionales."
+          "id": "a6",
+          "title": "Tu primer programa en PHP",
+          "explicacion": "Crea un archivo `index.php` y escribe: `<?php echo '¡Bienvenido al mundo PHP!'; ?>`. Guarda en `htdocs` y abre `http://localhost/index.php` en tu navegador."
         }
-    ]
+      ],
+      "video": "",
+      "dato": "PHP es la base de plataformas como WordPress, Drupal y Laravel. Su flexibilidad lo mantiene vigente más de 25 años después de su creación."
+    },
+    {
+      "id": 2,
+      "title": "Variables, tipos y operadores",
+      "description": "Aprenderás cómo PHP maneja datos, tipos de variables y operadores para construir lógica y cálculos en tus programas.",
+      "lecciones": [
+        {
+          "id": "b1",
+          "title": "Declaración de variables",
+          "explicacion": "En PHP todas las variables comienzan con `$`. No necesitas declarar su tipo: `$nombre = 'Angelo'; $edad = 14;`. PHP infiere el tipo automáticamente."
+        },
+        {
+          "id": "b2",
+          "title": "Tipos de datos básicos",
+          "explicacion": "Los principales tipos son: `string`, `int`, `float`, `bool`, `array`, `object` y `NULL`. PHP convierte tipos automáticamente cuando es necesario."
+        },
+        {
+          "id": "b3",
+          "title": "Constantes y alcance de variables",
+          "explicacion": "Las constantes se definen con `define('PI', 3.14);`. El alcance (`scope`) de una variable puede ser local, global o estático según su contexto."
+        },
+        {
+          "id": "b4",
+          "title": "Operadores aritméticos y de comparación",
+          "explicacion": "PHP incluye operadores aritméticos (`+`, `-`, `*`, `/`, `%`) y de comparación (`==`, `===`, `!=`, `>`, `<`, `>=`, `<=`). Estos permiten evaluar y manipular datos."
+        },
+        {
+          "id": "b5",
+          "title": "Operadores lógicos y ternarios",
+          "explicacion": "`&&`, `||` y `!` combinan condiciones lógicas. El operador ternario simplifica decisiones: `$resultado = ($edad >= 18) ? 'Adulto' : 'Menor';`."
+        },
+        {
+          "id": "b6",
+          "title": "Conversión de tipos y casting",
+          "explicacion": "Puedes convertir tipos explícitamente: `(int)$numero`, `(string)$valor`. Es útil para asegurar la coherencia de datos en operaciones críticas."
+        }
+      ],
+      "video": "",
+      "dato": "Dominar las variables y operadores te da control total sobre la lógica y el flujo de tus programas PHP."
+    },
+    {
+      "id": 3,
+      "title": "Condicionales y bucles",
+      "description": "Controla el flujo de ejecución con estructuras condicionales y ciclos de repetición en PHP.",
+      "lecciones": [
+        {
+          "id": "c1",
+          "title": "Condicionales if, elseif y else",
+          "explicacion": "Permiten ejecutar código dependiendo de condiciones. Ejemplo: `if($edad >= 18){ echo 'Mayor de edad'; } else { echo 'Menor'; }`."
+        },
+        {
+          "id": "c2",
+          "title": "Operador switch",
+          "explicacion": "`switch` evalúa una variable contra múltiples valores. Ejemplo: `switch($dia){ case 'Lunes': echo 'Inicio de semana'; break; }`."
+        },
+        {
+          "id": "c3",
+          "title": "Bucles for y while",
+          "explicacion": "`for` se usa cuando conoces el número de iteraciones; `while` se usa cuando depende de una condición. Ejemplo: `while($i < 5){ echo $i++; }`."
+        },
+        {
+          "id": "c4",
+          "title": "Bucle foreach",
+          "explicacion": "`foreach` recorre arrays fácilmente: `foreach($frutas as $fruta){ echo $fruta; }`. Es ideal para listas y colecciones de datos."
+        },
+        {
+          "id": "c5",
+          "title": "Control de flujo con break y continue",
+          "explicacion": "`break` detiene un bucle completamente, mientras que `continue` salta a la siguiente iteración. Útiles para optimizar lógica."
+        },
+        {
+          "id": "c6",
+          "title": "Estructuras anidadas y control avanzado",
+          "explicacion": "Puedes combinar condicionales y bucles para resolver lógica compleja, como validaciones o procesamiento de listas anidadas."
+        }
+      ],
+      "video": "",
+      "dato": "El control de flujo te permite crear programas dinámicos, interactivos y con lógica adaptable a cualquier situación."
+    },
+    {
+      "id": 4,
+      "title": "Funciones y manejo de formularios",
+      "description": "Aprenderás a modular tu código con funciones reutilizables y a procesar datos enviados por formularios HTML.",
+      "lecciones": [
+        {
+          "id": "d1",
+          "title": "Definición de funciones en PHP",
+          "explicacion": "Las funciones se definen con `function nombre($parametros) { }`. Permiten organizar el código, reducir repetición y mejorar mantenibilidad."
+        },
+        {
+          "id": "d2",
+          "title": "Parámetros, valores por defecto y retorno",
+          "explicacion": "Los parámetros pueden tener valores por defecto: `function saludar($nombre='Visitante'){ echo 'Hola '.$nombre; }`. El valor se devuelve con `return`."
+        },
+        {
+          "id": "d3",
+          "title": "Ámbito y variables globales",
+          "explicacion": "Las variables dentro de una función son locales. Para acceder a una variable global se usa `global $variable;` o `$GLOBALS['nombre']`."
+        },
+        {
+          "id": "d4",
+          "title": "Funciones anónimas y callbacks",
+          "explicacion": "PHP permite funciones anónimas y de callback: `$saludar = function($n){ return 'Hola '.$n; }; echo $saludar('Angelo');`."
+        },
+        {
+          "id": "d5",
+          "title": "Procesamiento de formularios HTML",
+          "explicacion": "Los datos enviados desde formularios se reciben con `$_GET` o `$_POST`. Ejemplo: `$nombre = $_POST['nombre']; echo 'Hola '.$nombre;`."
+        },
+        {
+          "id": "d6",
+          "title": "Validación y seguridad en formularios",
+          "explicacion": "Usa `htmlspecialchars()` y `filter_input()` para evitar ataques XSS e inyección de código. Validar siempre antes de guardar o mostrar datos."
+        }
+      ],
+      "video": "",
+      "dato": "Las funciones bien diseñadas y formularios seguros son la base de toda aplicación PHP profesional."
+    },
+    {
+      "id": 5,
+      "title": "Arrays y estructuras de datos",
+      "description": "Domina los arrays, arrays asociativos y funciones integradas para manipular información de manera eficiente.",
+      "lecciones": [
+        {
+          "id": "e1",
+          "title": "Arrays indexados",
+          "explicacion": "Un array indexado almacena valores con índices numéricos: `$colores = ['rojo', 'azul', 'verde'];`. Se accede con `$colores[0];`."
+        },
+        {
+          "id": "e2",
+          "title": "Arrays asociativos",
+          "explicacion": "Usan claves personalizadas: `$persona = ['nombre'=>'Angelo', 'edad'=>14]; echo $persona['nombre'];`."
+        },
+        {
+          "id": "e3",
+          "title": "Arrays multidimensionales",
+          "explicacion": "Permiten manejar estructuras complejas: `$usuarios = [['nombre'=>'Ana'], ['nombre'=>'Luis']]; echo $usuarios[1]['nombre'];`."
+        },
+        {
+          "id": "e4",
+          "title": "Funciones útiles para arrays",
+          "explicacion": "PHP incluye funciones como `array_push()`, `array_pop()`, `array_merge()`, `array_filter()` y `array_map()` para manipular datos fácilmente."
+        },
+        {
+          "id": "e5",
+          "title": "Recorriendo arrays con foreach y for",
+          "explicacion": "El bucle `foreach` es ideal para recorrer arrays. También puedes usar `for` si necesitas control sobre el índice."
+        },
+        {
+          "id": "e6",
+          "title": "Ordenamiento y búsqueda en arrays",
+          "explicacion": "Funciones como `sort()`, `asort()`, `ksort()`, y `in_array()` permiten organizar y buscar información rápidamente."
+        }
+      ],
+      "video": "",
+      "dato": "El manejo eficiente de arrays marca la diferencia entre un script simple y una aplicación PHP optimizada."
+    },
+    {
+      "id": 6,
+      "title": "PHP avanzado y buenas prácticas",
+      "description": "Aprende conceptos avanzados, control de errores, seguridad y prácticas profesionales en desarrollo PHP.",
+      "lecciones": [
+        {
+          "id": "f1",
+          "title": "Manejo de errores y excepciones",
+          "explicacion": "Usa `try`, `catch` y `finally` para controlar errores sin detener el flujo: `try { ... } catch(Exception $e) { echo $e->getMessage(); }`."
+        },
+        {
+          "id": "f2",
+          "title": "Inclusión de archivos y modularidad",
+          "explicacion": "Divide tu aplicación usando `include`, `require`, `include_once` y `require_once`. Esto mejora la estructura del proyecto."
+        },
+        {
+          "id": "f3",
+          "title": "Buenas prácticas de código limpio",
+          "explicacion": "Usa nombres descriptivos, comentarios claros, sangría consistente y evita código duplicado. Mantén un estilo uniforme."
+        },
+        {
+          "id": "f4",
+          "title": "Seguridad en PHP",
+          "explicacion": "Evita ataques SQL Injection usando consultas preparadas (PDO) y sanitiza toda entrada del usuario. La seguridad nunca es opcional."
+        },
+        {
+          "id": "f5",
+          "title": "Depuración y logging",
+          "explicacion": "Usa `error_log()` y `var_dump()` para depurar. Configura `display_errors=Off` en producción y guarda logs en archivos seguros."
+        },
+        {
+          "id": "f6",
+          "title": "Estructura de proyectos profesionales",
+          "explicacion": "Organiza tu código en carpetas: `/public`, `/includes`, `/config`, `/classes`. Esto facilita el mantenimiento y la escalabilidad."
+        }
+      ],
+      "video": "",
+      "dato": "PHP moderno y seguro se basa en código modular, validaciones robustas y arquitectura clara."
+    },
+    {
+      "id": 7,
+      "title": "Conexión y manejo de bases de datos con MySQL",
+      "description": "Aprende a conectar PHP con bases de datos MySQL, realizar consultas seguras y manipular información de forma eficiente.",
+      "lecciones": [
+        {
+          "id": "g1",
+          "title": "Introducción a MySQL y bases de datos relacionales",
+          "explicacion": "MySQL es un sistema gestor de bases de datos relacional (RDBMS). PHP puede conectarse a MySQL para leer, insertar, actualizar o eliminar información."
+        },
+        {
+          "id": "g2",
+          "title": "Conexión con MySQL usando MySQLi",
+          "explicacion": "Puedes conectar con `mysqli_connect('localhost','usuario','clave','base');`. Usa `mysqli_query()` para ejecutar consultas SQL."
+        },
+        {
+          "id": "g3",
+          "title": "Uso de PDO (PHP Data Objects)",
+          "explicacion": "PDO es una interfaz moderna y segura para bases de datos. Ejemplo: `$pdo = new PDO('mysql:host=localhost;dbname=test','root','');`."
+        },
+        {
+          "id": "g4",
+          "title": "Consultas preparadas y seguridad",
+          "explicacion": "Las consultas preparadas previenen inyecciones SQL: `$stmt = $pdo->prepare('SELECT * FROM usuarios WHERE id = ?'); $stmt->execute([$id]);`."
+        },
+        {
+          "id": "g5",
+          "title": "Insertar, actualizar y eliminar datos",
+          "explicacion": "Ejecuta consultas `INSERT`, `UPDATE`, `DELETE` con PDO. Siempre valida y escapa los datos antes de ejecutarlas."
+        },
+        {
+          "id": "g6",
+          "title": "Gestión de errores en consultas",
+          "explicacion": "Maneja errores con `try-catch` y verifica resultados con `rowCount()`. Loguea errores para auditoría sin mostrarlos al usuario."
+        }
+      ],
+      "video": "",
+      "dato": "Dominar PDO y MySQL es esencial para desarrollar sistemas de login, paneles administrativos y aplicaciones dinámicas seguras."
+    },
+    {
+      "id": 8,
+      "title": "Programación Orientada a Objetos (POO) en PHP",
+      "description": "Aprende los pilares de la POO en PHP: clases, objetos, herencia, encapsulación y más, para desarrollar software escalable.",
+      "lecciones": [
+        {
+          "id": "h1",
+          "title": "Introducción a la POO",
+          "explicacion": "La POO organiza el código en clases y objetos. Cada clase define propiedades y métodos que modelan entidades del mundo real."
+        },
+        {
+          "id": "h2",
+          "title": "Clases y objetos en PHP",
+          "explicacion": "Una clase se define con `class Usuario {}` y se instancia con `$u = new Usuario();`. Los métodos se definen con `public function saludar(){}`."
+        },
+        {
+          "id": "h3",
+          "title": "Encapsulación y modificadores de acceso",
+          "explicacion": "`public`, `private` y `protected` controlan el acceso a propiedades y métodos, protegiendo la integridad de los objetos."
+        },
+        {
+          "id": "h4",
+          "title": "Herencia y clases hijas",
+          "explicacion": "Las clases pueden heredar de otras: `class Admin extends Usuario {}`. Permite reutilizar código y extender funcionalidades."
+        },
+        {
+          "id": "h5",
+          "title": "Polimorfismo y métodos sobrescritos",
+          "explicacion": "El polimorfismo permite que métodos compartan nombre pero tengan comportamientos distintos según la clase que los implementa."
+        },
+        {
+          "id": "h6",
+          "title": "Constructores, destructores y autoload",
+          "explicacion": "`__construct()` inicializa objetos y `__destruct()` libera recursos. `spl_autoload_register()` carga clases automáticamente sin `require`."
+        }
+      ],
+      "video": "",
+      "dato": "La POO permite crear sistemas extensibles, seguros y mantenibles, base de frameworks modernos como Laravel o Symfony."
+    },
+    {
+      "id": 9,
+      "title": "Sesiones, cookies y autenticación",
+      "description": "Aprende cómo PHP maneja la persistencia de datos del usuario entre páginas: sesiones, cookies y sistemas de login.",
+      "lecciones": [
+        {
+          "id": "i1",
+          "title": "Qué son las sesiones y para qué sirven",
+          "explicacion": "Las sesiones permiten almacenar datos del usuario mientras navega. Se inician con `session_start()` y se guardan en `$_SESSION`."
+        },
+        {
+          "id": "i2",
+          "title": "Creación y manejo de sesiones",
+          "explicacion": "Ejemplo: `$_SESSION['usuario'] = 'Angelo'; echo $_SESSION['usuario'];`. Puedes destruirlas con `session_destroy()`."
+        },
+        {
+          "id": "i3",
+          "title": "Uso de cookies en PHP",
+          "explicacion": "Las cookies almacenan datos en el navegador: `setcookie('tema','oscuro',time()+3600);`. Se leen con `$_COOKIE['tema'];`."
+        },
+        {
+          "id": "i4",
+          "title": "Diferencias entre sesiones y cookies",
+          "explicacion": "Las sesiones son del lado del servidor y expiran al cerrar el navegador; las cookies se guardan en el cliente y tienen duración configurable."
+        },
+        {
+          "id": "i5",
+          "title": "Sistema de login básico con sesiones",
+          "explicacion": "Combina formularios, MySQL y `$_SESSION` para validar usuarios. Si las credenciales son correctas, almacena la sesión y redirige al panel."
+        },
+        {
+          "id": "i6",
+          "title": "Seguridad en sesiones y cookies",
+          "explicacion": "Regenera IDs con `session_regenerate_id()`, usa `httponly` en cookies y evita exponer datos sensibles en variables globales."
+        }
+      ],
+      "video": "",
+      "dato": "Las sesiones y cookies permiten construir sistemas de autenticación y personalización esenciales en toda aplicación web moderna."
+    },
+    {
+      "id": 10,
+      "title": "Manejo de archivos en PHP",
+      "description": "Aprende a leer, escribir, crear y eliminar archivos desde PHP, controlando el sistema de archivos del servidor.",
+      "lecciones": [
+        {
+          "id": "j1",
+          "title": "Introducción al manejo de archivos",
+          "explicacion": "PHP permite manipular archivos del servidor para crear logs, guardar datos o generar contenido dinámico. Usa funciones como `fopen()`, `fread()` y `fwrite()`."
+        },
+        {
+          "id": "j2",
+          "title": "Lectura y escritura de archivos",
+          "explicacion": "Ejemplo: `$archivo = fopen('datos.txt','r'); $contenido = fread($archivo, filesize('datos.txt')); fclose($archivo);` para leer un archivo completo."
+        },
+        {
+          "id": "j3",
+          "title": "Creación y eliminación de archivos",
+          "explicacion": "Para crear usa `fopen('nuevo.txt','w');`. Para eliminar, `unlink('archivo.txt');`. Asegúrate de tener permisos adecuados en el servidor."
+        },
+        {
+          "id": "j4",
+          "title": "Manipulación de directorios",
+          "explicacion": "Puedes crear y explorar carpetas con `mkdir()`, `rmdir()` y `scandir()`. Ideal para gestionar recursos o generar contenido dinámico."
+        },
+        {
+          "id": "j5",
+          "title": "Subida de archivos desde formularios",
+          "explicacion": "PHP permite subir archivos con `$_FILES`. Usa `move_uploaded_file()` para guardar el archivo en el servidor de forma segura."
+        },
+        {
+          "id": "j6",
+          "title": "Seguridad en la gestión de archivos",
+          "explicacion": "Verifica la extensión y tipo MIME del archivo antes de guardarlo. Nunca confíes en el nombre enviado por el cliente."
+        }
+      ],
+      "video": "",
+      "dato": "El control de archivos permite crear gestores de contenido, galerías, sistemas de backup y módulos de subida seguros."
+    },
+    {
+      "id": 11,
+      "title": "Subida y validación de archivos",
+      "description": "Aprende el proceso completo de validación, filtrado y almacenamiento seguro de archivos cargados por los usuarios.",
+      "lecciones": [
+        {
+          "id": "k1",
+          "title": "Configuración del entorno para subida",
+          "explicacion": "En `php.ini`, ajusta `file_uploads = On` y `upload_max_filesize`. Define el límite máximo para controlar el tamaño de los archivos."
+        },
+        {
+          "id": "k2",
+          "title": "Formulario de subida de archivos",
+          "explicacion": "Crea un formulario con `enctype='multipart/form-data'`. PHP recibirá el archivo en `$_FILES['nombre']`."
+        },
+        {
+          "id": "k3",
+          "title": "Procesando archivos subidos",
+          "explicacion": "Usa `$_FILES['archivo']['tmp_name']` y `move_uploaded_file()` para mover el archivo a una carpeta segura del servidor."
+        },
+        {
+          "id": "k4",
+          "title": "Validación del tipo y tamaño",
+          "explicacion": "Valida `$_FILES['archivo']['type']` y `$_FILES['archivo']['size']` para permitir solo formatos y tamaños permitidos."
+        },
+        {
+          "id": "k5",
+          "title": "Prevención de ataques mediante subida",
+          "explicacion": "Evita la ejecución de archivos maliciosos renombrándolos y guardándolos fuera del directorio público. Nunca permitas subir scripts .php directamente."
+        },
+        {
+          "id": "k6",
+          "title": "Subidas múltiples de archivos",
+          "explicacion": "Permite subir varios archivos con inputs múltiples: `<input type='file' name='archivos[]' multiple>`. Recorre `$_FILES['archivos']['name']` para procesarlos."
+        }
+      ],
+      "video": "",
+      "dato": "Una buena validación de archivos es clave para evitar vulnerabilidades y mantener seguro el servidor."
+    },
+    {
+      "id": 12,
+      "title": "Validaciones y expresiones regulares",
+      "description": "Aprende a validar datos de formularios con expresiones regulares y filtros integrados de PHP para asegurar la integridad de la información.",
+      "lecciones": [
+        {
+          "id": "l1",
+          "title": "Qué son las expresiones regulares",
+          "explicacion": "Las expresiones regulares permiten buscar y validar patrones en cadenas. En PHP se usan con `preg_match()` y `preg_replace()`."
+        },
+        {
+          "id": "l2",
+          "title": "Validación de correos y contraseñas",
+          "explicacion": "Ejemplo: `preg_match('/^[\\w.-]+@[\\w.-]+\\.\\w+$/', $email);` valida emails. Para contraseñas, usa patrones que exijan mayúsculas, números y símbolos."
+        },
+        {
+          "id": "l3",
+          "title": "Funciones de validación integradas",
+          "explicacion": "PHP ofrece `filter_var()` con filtros como `FILTER_VALIDATE_EMAIL` o `FILTER_VALIDATE_URL`, simplificando las validaciones comunes."
+        },
+        {
+          "id": "l4",
+          "title": "Saneamiento de datos",
+          "explicacion": "Usa `FILTER_SANITIZE_STRING`, `FILTER_SANITIZE_EMAIL` o `htmlspecialchars()` para eliminar caracteres peligrosos de la entrada del usuario."
+        },
+        {
+          "id": "l5",
+          "title": "Validación de formularios paso a paso",
+          "explicacion": "Combina `isset()`, `empty()` y validaciones regulares para construir formularios robustos que controlen errores y muestren mensajes personalizados."
+        },
+        {
+          "id": "l6",
+          "title": "Expresiones regulares avanzadas",
+          "explicacion": "Aprende patrones avanzados como lookahead (`(?=...)`) y grupos opcionales `(?:...)` para validaciones complejas y eficientes."
+        }
+      ],
+      "video": "",
+      "dato": "La validación es la primera línea de defensa contra ataques y errores. PHP ofrece potentes herramientas para hacerlo fácil y seguro."
+    },
+    {
+      "id": 13,
+      "title": "PHP y JSON: intercambio de datos moderno",
+      "description": "Aprende a trabajar con JSON (JavaScript Object Notation) en PHP para comunicarte con APIs, guardar configuraciones o procesar datos externos.",
+      "lecciones": [
+        {
+          "id": "m1",
+          "title": "Qué es JSON y por qué es importante",
+          "explicacion": "JSON es un formato ligero y estructurado para el intercambio de datos entre lenguajes. PHP lo usa ampliamente para APIs y configuraciones."
+        },
+        {
+          "id": "m2",
+          "title": "Codificación y decodificación JSON",
+          "explicacion": "Usa `json_encode($array)` para convertir a JSON y `json_decode($json, true)` para convertirlo a array asociativo en PHP."
+        },
+        {
+          "id": "m3",
+          "title": "Manejo de archivos JSON",
+          "explicacion": "Puedes leer y escribir archivos JSON fácilmente con `file_get_contents()` y `file_put_contents()` combinados con `json_encode()` y `json_decode()`."
+        },
+        {
+          "id": "m4",
+          "title": "Validación y errores en JSON",
+          "explicacion": "Después de `json_decode()`, verifica errores con `json_last_error_msg()` para detectar JSON mal formado."
+        },
+        {
+          "id": "m5",
+          "title": "Usando JSON en APIs REST",
+          "explicacion": "Las APIs modernas responden en formato JSON. Envía encabezados con `header('Content-Type: application/json');` antes de `echo json_encode($data);`."
+        },
+        {
+          "id": "m6",
+          "title": "Integración de PHP con JavaScript",
+          "explicacion": "Genera JSON en PHP y consúmelo con `fetch()` en JavaScript para crear aplicaciones web dinámicas y modernas."
+        }
+      ],
+      "video": "",
+      "dato": "JSON es el idioma universal de la web moderna. Dominarlo con PHP te abre la puerta al desarrollo de APIs y microservicios."
+    },
+    {
+      "id": 14,
+      "title": "Fechas, tiempo y correo electrónico en PHP",
+      "description": "Aprende a manejar fechas, zonas horarias, y a enviar correos electrónicos desde PHP usando librerías modernas.",
+      "lecciones": [
+        {
+          "id": "n1",
+          "title": "Manejo de fechas con DateTime",
+          "explicacion": "La clase `DateTime` permite manipular fechas fácilmente: `$hoy = new DateTime(); echo $hoy->format('Y-m-d');`."
+        },
+        {
+          "id": "n2",
+          "title": "Zonas horarias y formatos personalizados",
+          "explicacion": "Configura zonas horarias con `date_default_timezone_set('America/Lima');` y usa formatos como `d/m/Y H:i:s` para mostrar fechas legibles."
+        },
+        {
+          "id": "n3",
+          "title": "Operaciones con fechas",
+          "explicacion": "Usa `DateInterval` y `DatePeriod` para sumar, restar o recorrer rangos de fechas de forma precisa y profesional."
+        },
+        {
+          "id": "n4",
+          "title": "Envío de correos con mail()",
+          "explicacion": "PHP incluye `mail($to, $subject, $message, $headers)`. Sin embargo, para producción se recomienda usar librerías externas como PHPMailer."
+        },
+        {
+          "id": "n5",
+          "title": "Envío de correos con PHPMailer",
+          "explicacion": "PHPMailer permite enviar correos autenticados por SMTP, adjuntar archivos y usar HTML. Ideal para formularios de contacto o notificaciones automáticas."
+        },
+        {
+          "id": "n6",
+          "title": "Buenas prácticas de envío y seguridad",
+          "explicacion": "Usa SMTP seguro (`ssl/tls`), valida los destinatarios y nunca permitas entrada de usuarios sin sanitizar en los campos del correo."
+        }
+      ],
+      "video": "",
+      "dato": "Controlar fechas y correo electrónico es esencial para automatizar reportes, notificaciones y tareas programadas."
+    },
+    {
+      "id": 15,
+      "title": "PHP moderno: Composer, namespaces y autoload",
+      "description": "Descubre las herramientas modernas de PHP para gestionar dependencias, organizar código y construir proyectos escalables.",
+      "lecciones": [
+        {
+          "id": "o1",
+          "title": "Introducción a Composer",
+          "explicacion": "Composer es el gestor de dependencias de PHP. Permite instalar librerías y frameworks fácilmente con `composer require paquete/nombre`."
+        },
+        {
+          "id": "o2",
+          "title": "Estructura de un proyecto con Composer",
+          "explicacion": "Composer genera el archivo `composer.json` con las dependencias y `vendor/autoload.php` para cargarlas automáticamente."
+        },
+        {
+          "id": "o3",
+          "title": "Namespaces en PHP",
+          "explicacion": "Los namespaces organizan clases y evitan conflictos de nombres. Ejemplo: `namespace App\Controllers; class HomeController {}`."
+        },
+        {
+          "id": "o4",
+          "title": "Autoload y PSR-4",
+          "explicacion": "Composer usa PSR-4 para cargar automáticamente clases según su ruta. Esto elimina la necesidad de incluir manualmente los archivos."
+        },
+        {
+          "id": "o5",
+          "title": "Estructura modular del código",
+          "explicacion": "Divide tu aplicación en módulos o capas (`Controllers`, `Models`, `Views`) siguiendo un patrón MVC o similar."
+        },
+        {
+          "id": "o6",
+          "title": "Buenas prácticas de organización",
+          "explicacion": "Mantén dependencias actualizadas, usa versiones semánticas (`^1.2`), y evita dependencias innecesarias que inflen tu proyecto."
+        }
+      ],
+      "video": "",
+      "dato": "Composer y namespaces son el ADN del PHP moderno, y dominarlo es esencial para trabajar con frameworks como Laravel o Symfony."
+    },
+    {
+      "id": 16,
+      "title": "Creación de APIs RESTful con PHP",
+      "description": "Aprende a construir APIs modernas con PHP, manejar peticiones HTTP, autenticación por tokens y respuestas en JSON.",
+      "lecciones": [
+        {
+          "id": "p1",
+          "title": "Qué es una API REST y cómo funciona",
+          "explicacion": "Una API REST usa los métodos HTTP (`GET`, `POST`, `PUT`, `DELETE`) para interactuar con datos. PHP puede implementarlas enviando y recibiendo JSON."
+        },
+        {
+          "id": "p2",
+          "title": "Configurando el entorno de una API",
+          "explicacion": "Organiza tu API en carpetas (`/routes`, `/controllers`, `/models`) y usa `header('Content-Type: application/json');` para definir el formato de salida."
+        },
+        {
+          "id": "p3",
+          "title": "Manejo de solicitudes HTTP en PHP puro",
+          "explicacion": "Usa `$_SERVER['REQUEST_METHOD']` para detectar el tipo de petición y `file_get_contents('php://input')` para leer datos enviados en JSON."
+        },
+        {
+          "id": "p4",
+          "title": "Autenticación con tokens y JWT",
+          "explicacion": "Usa tokens JWT (JSON Web Tokens) para proteger rutas privadas. Verifica la validez y caducidad del token antes de permitir acceso a los recursos."
+        },
+        {
+          "id": "p5",
+          "title": "Manejo de errores y respuestas HTTP",
+          "explicacion": "Devuelve códigos HTTP apropiados (`200 OK`, `400 Bad Request`, `401 Unauthorized`, `500 Server Error`) junto a mensajes en formato JSON."
+        },
+        {
+          "id": "p6",
+          "title": "Buenas prácticas y versionado de APIs",
+          "explicacion": "Versiona tus endpoints (`/api/v1/usuarios`) y documenta con Swagger o Postman para mantener consistencia y facilitar integración externa."
+        }
+      ],
+      "video": "",
+      "dato": "Construir APIs RESTful en PHP te abre las puertas al desarrollo de microservicios, apps móviles y sistemas distribuidos."
+    },
+    {
+      "id": 17,
+      "title": "Introducción a Frameworks PHP modernos (Laravel y Slim)",
+      "description": "Descubre cómo los frameworks modernos simplifican el desarrollo con estructuras profesionales, routing avanzado y ORM integrados.",
+      "lecciones": [
+        {
+          "id": "q1",
+          "title": "Qué es un framework y por qué usarlo",
+          "explicacion": "Un framework proporciona una estructura base con herramientas listas para usar, reduciendo código repetitivo y mejorando la seguridad y escalabilidad."
+        },
+        {
+          "id": "q2",
+          "title": "Laravel: el gigante de PHP",
+          "explicacion": "Laravel ofrece un potente ORM (Eloquent), rutas limpias, plantillas Blade y autenticación integrada. Se instala con `composer create-project laravel/laravel nombre-proyecto`."
+        },
+        {
+          "id": "q3",
+          "title": "Slim Framework: microframework ligero",
+          "explicacion": "Slim es ideal para APIs y microservicios. Define rutas rápidas con `$app->get('/usuarios', function() { ... });`. Rápido, simple y elegante."
+        },
+        {
+          "id": "q4",
+          "title": "Routing, controladores y vistas",
+          "explicacion": "Los frameworks separan rutas, controladores y vistas para mantener el código limpio y modular, siguiendo el patrón MVC."
+        },
+        {
+          "id": "q5",
+          "title": "ORM y conexión a bases de datos",
+          "explicacion": "Eloquent (Laravel) y Medoo (Slim) permiten interactuar con bases de datos usando objetos, evitando escribir SQL manualmente."
+        },
+        {
+          "id": "q6",
+          "title": "Buenas prácticas con frameworks",
+          "explicacion": "Usa migraciones, seeders y control de versiones. Mantén tus dependencias actualizadas con Composer y sigue las normas PSR."
+        }
+      ],
+      "video": "",
+      "dato": "Los frameworks te permiten desarrollar más rápido, con código limpio, seguro y escalable, listo para entornos empresariales."
+    },
+    {
+      "id": 18,
+      "title": "Despliegue y optimización de proyectos PHP",
+      "description": "Aprende cómo publicar, escalar y optimizar tus proyectos PHP en entornos de producción reales.",
+      "lecciones": [
+        {
+          "id": "r1",
+          "title": "Preparando tu proyecto para producción",
+          "explicacion": "Elimina archivos de prueba, desactiva `display_errors`, activa caché de OPcode y configura `.env` para variables de entorno seguras."
+        },
+        {
+          "id": "r2",
+          "title": "Despliegue en servidores compartidos y VPS",
+          "explicacion": "Usa FileZilla o Git para subir archivos a un hosting o VPS. Configura Apache o Nginx para apuntar al directorio `/public` de tu aplicación."
+        },
+        {
+          "id": "r3",
+          "title": "Configuración de entornos con Docker",
+          "explicacion": "Dockeriza tu app creando un `Dockerfile` y `docker-compose.yml` con servicios PHP, MySQL y Nginx. Facilita la portabilidad y despliegue."
+        },
+        {
+          "id": "r4",
+          "title": "Optimización de rendimiento",
+          "explicacion": "Usa caché (`OPcache`, `Redis`), minimiza consultas SQL y comprime respuestas. Monitorea tu app con herramientas como New Relic o Blackfire."
+        },
+        {
+          "id": "r5",
+          "title": "Seguridad en entornos productivos",
+          "explicacion": "Usa HTTPS, permisos mínimos en archivos, sanitiza entradas y bloquea acceso directo a configuraciones sensibles como `.env` o `/config`."
+        },
+        {
+          "id": "r6",
+          "title": "Mantenimiento y escalabilidad",
+          "explicacion": "Implementa backups automáticos, logs rotativos y CI/CD. Escala horizontalmente usando balanceadores de carga y múltiples instancias del servidor."
+        }
+      ],
+      "video": "",
+      "dato": "Desplegar correctamente un proyecto PHP es el paso que te separa del entorno local al mundo real. Es donde tu código se vuelve producción."
+    }
+  ]
 }

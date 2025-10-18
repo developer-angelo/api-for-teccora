@@ -1,253 +1,253 @@
 {
-    "id": "html",
-    "name": "Curso intensivo de HTML5",
-    "description": "Aprende a elaborar plataformas webs, armando su esqueleto ☠.",
-    "modulos": [
+  "id": "html",
+  "name": "Curso Intensivo de HTML5 Profesional",
+  "description": "Domina la base del desarrollo web moderno aprendiendo HTML5 desde sus fundamentos hasta sus aplicaciones más avanzadas. Comprende cómo estructurar contenido semántico, accesible y optimizado para SEO, con visión de estándares y buenas prácticas.",
+  "modulos": [
+    {
+      "id": 1,
+      "title": "Fundamentos y Contexto Histórico del Lenguaje HTML",
+      "description": "Comprenderás la naturaleza, propósito y evolución de HTML como pilar del desarrollo web, reconociendo su rol dentro del ecosistema tecnológico actual.",
+      "lecciones": [
         {
-            "id": 1,
-            "title": "Conceptos y explicaciones",
-            "description": "Aprenderás lo básico, además de manejar los principales conceptos de este lenguaje.",
-            "lecciones": [
-                {
-                    "id": "a1",
-                    "title": "¿Qué es HTML?",
-                    "explicacion": "HTML son las siglas de HyperText Markup Language (Lenguaje de Marcado de Hipertexto), el lenguaje estándar para crear y estructurar el contenido de las páginas web. Se utiliza para organizar elementos como texto, encabezados, imágenes y enlaces, indicando a los navegadores cómo mostrar la información de forma organizada. A diferencia de los lenguajes de programación, su función es la de dar estructura al contenido, no realizar cálculos."
-                },
-                {
-                    "id": "a2",
-                    "title": "¿Cómo funciona?",
-                    "explicacion": "HTML utiliza un sistema de 'etiquetas' o 'marcas' para definir los diferentes componentes de una página.  Cada etiqueta indica el tipo de contenido y su función. Por ejemplo, la etiqueta `<h1>` se usa para un título principal y `<p>` para un párrafo. Un elemento HTML se compone típicamente de una etiqueta de apertura, el contenido y una etiqueta de cierre. Por ejemplo: `<p>Este es un párrafo</p>`. Los archivos HTML se identifican con las extensiones `.html` o `.htm` y pueden ser creados con un editor de texto simple o software de diseño web especializado."
-                },
-                {
-                    "id": "a3",
-                    "title": "¿Para qué sirve?",
-                    "explicacion": "Proporciona el marco fundamental de cualquier página web, organizando texto, imágenes, tablas, formularios y otros elementos. Le indica al navegador web cómo debe mostrar los elementos, desde la tipografía hasta la disposición de los elementos multimedia. Es el primer paso y la base de todo el desarrollo web moderno, permitiendo la creación de sitios web en cualquier plataforma."
-                },
-                {
-                    "id": "a4",
-                    "title": "Evolución de HTML",
-                    "explicacion": "Desde HTML 1.0 hasta HTML5, este lenguaje ha evolucionado para adaptarse a nuevas necesidades. HTML5 introdujo etiquetas semánticas, soporte multimedia nativo, y compatibilidad con APIs modernas como geolocalización y canvas, revolucionando el desarrollo web."
-                }
-            ],
-            "video": "",
-            "dato": "HTML, no es un lenguaje de programación, ya que se especializa en el marcado, para realizar la estructura de una web."
+          "id": "a1",
+          "title": "Qué es HTML y su propósito en la Web",
+          "explicacion": "HTML (HyperText Markup Language) es el lenguaje estándar utilizado para estructurar y presentar contenido en la web. Define la semántica del contenido, permitiendo que los navegadores y los motores de búsqueda comprendan la jerarquía e intención de cada elemento dentro de un documento. Su propósito no es programar, sino organizar y describir información para ser interpretada visualmente y de forma accesible."
         },
         {
-            "id": 2,
-            "title": "Anatomía de un documento HTML5",
-            "description": "Exploraremos las partes esenciales de una página web, desde la declaración del tipo de documento hasta los metadatos y el cuerpo visible.",
-            "lecciones": [
-                {
-                    "id": "b1",
-                    "title": "Estructura básica de un documento HTML",
-                    "explicacion": "Un documento HTML5 tiene una estructura estándar que incluye la declaración `<!DOCTYPE html>`, la etiqueta raíz `<html>`, y sus dos secciones principales: la cabecera `<head>` y el cuerpo `<body>`. La correcta anidación de estas etiquetas es fundamental para el funcionamiento y la correcta interpretación de la página por el navegador."
-                },
-                {
-                    "id": "b2",
-                    "title": "La cabecera (<head>)",
-                    "explicacion": "La sección `<head>` contiene información que no se muestra directamente en la página, pero es vital para su funcionamiento. Aquí se definen metadatos como el título de la página (`<title>`), la codificación de caracteres (`<meta charset='utf-8'>`), y se enlazan recursos externos como hojas de estilo (`<link>`) y scripts de JavaScript."
-                },
-                {
-                    "id": "b3",
-                    "title": "El cuerpo (<body>)",
-                    "explicacion": "La sección `<body>` es el corazón del documento, ya que contiene todo el contenido que el usuario puede ver e interactuar: texto, imágenes, videos, formularios, y otros elementos. Es donde se construye la interfaz visual de la página web."
-                },
-                {
-                    "id": "b4",
-                    "title": "Comentarios en HTML",
-                    "explicacion": "Los comentarios se escriben con `<!-- comentario -->` y sirven para dejar notas dentro del código que no son visibles para el usuario. Son útiles para documentar partes del código o desactivar temporalmente secciones."
-                }
-            ],
-            "video": "https://fwfnrpvtldgyvgorzwrp.supabase.co/storage/v1/object/public/Videos/html_1.mp4",
-            "dato": "Las etiquetas `<head>` y `<body>` son hijos directos de la etiqueta `<html>`, definiendo la estructura semántica principal del documento."
+          "id": "a2",
+          "title": "Cómo funciona un documento HTML",
+          "explicacion": "HTML funciona mediante un sistema jerárquico de etiquetas (tags) que delimitan elementos. Cada elemento tiene una etiqueta de apertura y cierre, y puede contener atributos que modifican su comportamiento o aspecto. Estas etiquetas son interpretadas por el navegador para construir el DOM (Document Object Model), la representación estructurada del contenido visible y manipulable mediante CSS o JavaScript."
         },
         {
-            "id": 3,
-            "title": "Etiquetas y elementos básicos",
-            "description": "Aprenderás las etiquetas fundamentales para estructurar textos, enlaces, imágenes y listas en HTML.",
-            "lecciones": [
-                {
-                    "id": "c1",
-                    "title": "Encabezados y párrafos",
-                    "explicacion": "Los encabezados se crean con `<h1>` a `<h6>` para jerarquizar la información, y los párrafos con `<p>`. Mantener una estructura clara mejora la accesibilidad y SEO de la página."
-                },
-                {
-                    "id": "c2",
-                    "title": "Enlaces",
-                    "explicacion": "Los enlaces se crean con la etiqueta `<a>`. Por ejemplo: `<a href='https://www.ejemplo.com'>Visitar ejemplo</a>`. Permiten navegar entre páginas o secciones dentro de un mismo sitio."
-                },
-                {
-                    "id": "c3",
-                    "title": "Imágenes",
-                    "explicacion": "Se utilizan con la etiqueta `<img>` indicando la ruta de la imagen y atributos como `alt` para describirla. Por ejemplo: `<img src='foto.jpg' alt='Foto de ejemplo'>`."
-                },
-                {
-                    "id": "c4",
-                    "title": "Listas",
-                    "explicacion": "HTML permite listas ordenadas (`<ol>`) y desordenadas (`<ul>`), con elementos `<li>`. Son útiles para organizar información de manera clara y jerárquica."
-                },
-                {
-                    "id": "c5",
-                    "title": "Tablas básicas",
-                    "explicacion": "Las tablas se crean con `<table>`, `<tr>` para filas, `<th>` para encabezados y `<td>` para celdas de datos. Son útiles para mostrar información tabular como horarios o comparaciones."
-                }
-            ],
-            "video": "",
-            "dato": "Aprender estas etiquetas es clave para construir cualquier página web básica."
+          "id": "a3",
+          "title": "Aplicaciones y alcance del lenguaje",
+          "explicacion": "HTML sirve como la base de toda página o aplicación web. Define el esqueleto sobre el cual se aplican estilos (CSS) y lógica (JavaScript). Es esencial en el diseño de interfaces, en el SEO técnico, en la accesibilidad (a través de etiquetas ARIA) y en la interoperabilidad entre plataformas digitales."
         },
         {
-            "id": 4,
-            "title": "Formularios y controles de usuario",
-            "description": "Exploraremos cómo crear formularios para interactuar con los usuarios mediante campos de texto, botones y selección de opciones.",
-            "lecciones": [
-                {
-                    "id": "d1",
-                    "title": "Introducción a los formularios",
-                    "explicacion": "Los formularios se crean con la etiqueta `<form>` y permiten recolectar datos de los usuarios, que luego pueden enviarse a un servidor para su procesamiento."
-                },
-                {
-                    "id": "d2",
-                    "title": "Campos de texto y botones",
-                    "explicacion": "Se usan `<input type='text'>` para texto, `<input type='password'>` para contraseñas y `<button>` o `<input type='submit'>` para enviar el formulario."
-                },
-                {
-                    "id": "d3",
-                    "title": "Checkboxes, radios y select",
-                    "explicacion": "Checkboxes (`<input type='checkbox'>`) permiten seleccionar múltiples opciones; radios (`<input type='radio'>`) solo una; y `<select>` crea menús desplegables para elegir entre varias opciones."
-                },
-                {
-                    "id": "d4",
-                    "title": "Etiquetas y agrupaciones",
-                    "explicacion": "Se usa `<label>` para asociar textos con campos y `<fieldset>` junto con `<legend>` para agrupar campos relacionados, mejorando la accesibilidad del formulario."
-                }
-            ],
-            "video": "",
-            "dato": "Los formularios son esenciales para cualquier interacción avanzada en la web."
-        },
-        {
-            "id": 5,
-            "title": "Multimedia y elementos semánticos",
-            "description": "Aprenderás a integrar imágenes, audio, video y otros elementos semánticos que mejoran la accesibilidad y organización de tu web.",
-            "lecciones": [
-                {
-                    "id": "e1",
-                    "title": "Insertar imágenes, audio y video",
-                    "explicacion": "Además de `<img>`, HTML5 incluye `<audio>` y `<video>` para incorporar medios directamente en la página, con controles y opciones de reproducción."
-                },
-                {
-                    "id": "e2",
-                    "title": "Elementos semánticos",
-                    "explicacion": "HTML5 introdujo etiquetas como `<header>`, `<footer>`, `<article>` y `<section>` para estructurar mejor el contenido y facilitar la accesibilidad y el SEO."
-                },
-                {
-                    "id": "e3",
-                    "title": "El elemento <figure> y <figcaption>",
-                    "explicacion": "Se utilizan para agrupar imágenes con sus descripciones o créditos, mejorando la presentación semántica y la comprensión del contenido visual."
-                }
-            ],
-            "video": "",
-            "dato": "Usar elementos semánticos hace que tu página sea más comprensible para navegadores, buscadores y lectores de pantalla."
-        },
-        {
-            "id": 6,
-            "title": "Buenas prácticas y accesibilidad",
-            "description": "Conocerás las normas de HTML que mejoran la calidad del código, la experiencia del usuario y la accesibilidad de tu web.",
-            "lecciones": [
-                {
-                    "id": "f1",
-                    "title": "Validación de HTML",
-                    "explicacion": "Es importante validar el HTML para asegurarse de que el código cumple con los estándares y se visualiza correctamente en todos los navegadores."
-                },
-                {
-                    "id": "f2",
-                    "title": "Accesibilidad web",
-                    "explicacion": "Usar etiquetas correctas, descripciones `alt` para imágenes, títulos claros y estructura semántica permite que personas con discapacidades puedan navegar tu web."
-                },
-                {
-                    "id": "f3",
-                    "title": "Optimización y SEO básico",
-                    "explicacion": "Mantener un código limpio, utilizar títulos descriptivos y metaetiquetas ayuda a que los motores de búsqueda indexen mejor tu sitio y mejore su rendimiento."
-                },
-                {
-                    "id": "f4",
-                    "title": "Buenas prácticas de estructura",
-                    "explicacion": "Evita anidar etiquetas incorrectamente, usa comentarios para documentar y mantén un orden lógico en tu código para facilitar el mantenimiento."
-                }
-            ],
-            "video": "https://fwfnrpvtldgyvgorzwrp.supabase.co/storage/v1/object/public/Videos/html_2.mp4",
-            "dato": "La accesibilidad y buenas prácticas no solo son éticas, sino que también potencian la visibilidad de tu web."
-        },
-        {
-            "id": 7,
-            "title": "Metadatos y SEO avanzado",
-            "description": "Aprende a usar metadatos y microdatos para mejorar la visibilidad y comprensión de tu web por los motores de búsqueda.",
-            "lecciones": [
-                {
-                    "id": "g1",
-                    "title": "Metaetiquetas básicas",
-                    "explicacion": "Las metaetiquetas proporcionan información sobre la página. Por ejemplo, `<meta name='description' content='Curso de HTML5'>` ayuda a los buscadores a entender de qué trata tu sitio."
-                },
-                {
-                    "id": "g2",
-                    "title": "Open Graph y Twitter Cards",
-                    "explicacion": "Permiten que tus enlaces se vean bien al compartirse en redes sociales, mostrando títulos, descripciones e imágenes personalizadas."
-                },
-                {
-                    "id": "g3",
-                    "title": "Microdatos y Schema.org",
-                    "explicacion": "Ayudan a los motores de búsqueda a entender mejor tu contenido mediante marcado estructurado, lo cual mejora la apariencia de tus resultados en Google."
-                }
-            ],
-            "video": "",
-            "dato": "Los metadatos y microdatos hacen que tu web destaque en los resultados de búsqueda."
-        },
-        {
-            "id": 8,
-            "title": "HTML5 APIs y características avanzadas",
-            "description": "Explora las nuevas funcionalidades que hacen de HTML5 una herramienta poderosa e interactiva.",
-            "lecciones": [
-                {
-                    "id": "h1",
-                    "title": "API de geolocalización",
-                    "explicacion": "Permite obtener la ubicación del usuario con su permiso. Útil para mapas, servicios locales o personalización de contenido."
-                },
-                {
-                    "id": "h2",
-                    "title": "Canvas y gráficos 2D",
-                    "explicacion": "La etiqueta `<canvas>` permite dibujar gráficos, animaciones o juegos directamente desde el navegador usando JavaScript."
-                },
-                {
-                    "id": "h3",
-                    "title": "Almacenamiento local (LocalStorage y SessionStorage)",
-                    "explicacion": "Permite guardar datos del usuario directamente en el navegador, sin necesidad de cookies. Ideal para aplicaciones offline o recordar preferencias."
-                }
-            ],
-            "video": "",
-            "dato": "Las APIs de HTML5 te permiten crear experiencias web dinámicas sin depender de plugins externos."
-        },
-        {
-            "id": 9,
-            "title": "Proyecto final: Construcción de un portfolio personal.",
-            "description": "Aplicarás todo lo aprendido para crear tu propio sitio web de portfolio, mostrando tus habilidades y comentando sobre tí.",
-            "lecciones": [
-                {
-                    "id": "i1",
-                    "title": "Planificación del portfolio",
-                    "explicacion": "Define la estructura y contenido, destacando tus habilidades y proyectos."
-                },
-                {
-                    "id": "i2",
-                    "title": "Desarrollo del sitio web",
-                    "explicacion": "Utiliza HTML5 para construir las diferentes secciones de tu portfolio, aplicando las mejores prácticas aprendidas."
-                },
-                {
-                    "id": "i3",
-                    "title": "Optimización y publicación",
-                    "explicacion": "Valida tu código, optimiza para SEO y publica tu portfolio en una plataforma de hosting."
-                }
-            ],
-            "video": "",
-            "dato": "Un portfolio bien diseñado es clave para mostrar tus habilidades y atraer oportunidades profesionales."
+          "id": "a4",
+          "title": "Evolución y estándares de HTML",
+          "explicacion": "Desde HTML 1.0 hasta HTML5, el lenguaje ha evolucionado bajo la supervisión del W3C y WHATWG. HTML5 introdujo etiquetas semánticas, compatibilidad nativa con audio y video, API de Canvas, almacenamiento local y geolocalización, marcando un cambio hacia aplicaciones web más ricas e interactivas sin depender de complementos externos."
         }
-    ]
+      ],
+      "video": "",
+      "dato": "HTML no es un lenguaje de programación, sino de marcado. Su función es estructurar, describir y dar significado al contenido web."
+    },
+    {
+      "id": 2,
+      "title": "Estructura y Anatomía de un Documento HTML5",
+      "description": "Aprenderás a construir la base de una página HTML5 profesional, comprendiendo la función de cada parte y cómo se comunican entre sí.",
+      "lecciones": [
+        {
+          "id": "b1",
+          "title": "Estructura semántica básica",
+          "explicacion": "Todo documento HTML5 comienza con la declaración `<!DOCTYPE html>`, que indica al navegador el estándar del documento. A continuación, se define el elemento raíz `<html>`, dentro del cual se ubican dos secciones principales: `<head>` para metadatos y configuraciones, y `<body>` para el contenido visible."
+        },
+        {
+          "id": "b2",
+          "title": "El encabezado `<head>` y su relevancia técnica",
+          "explicacion": "La sección `<head>` incluye información que no se muestra al usuario, pero es esencial para el rendimiento, accesibilidad y SEO del sitio. Aquí se declaran los metadatos (`<meta>`), el título (`<title>`), vínculos a recursos externos (`<link>`) y scripts que afectan el comportamiento global del documento."
+        },
+        {
+          "id": "b3",
+          "title": "El cuerpo `<body>` y el flujo de contenido",
+          "explicacion": "El `<body>` contiene todo lo que el usuario visualiza o con lo que interactúa: texto, multimedia, formularios, botones, etc. Su estructura jerárquica y semántica define la accesibilidad del sitio y afecta directamente la experiencia del usuario."
+        },
+        {
+          "id": "b4",
+          "title": "Comentarios y legibilidad del código",
+          "explicacion": "Los comentarios (`<!-- ... -->`) permiten documentar el código, describir secciones o desactivar temporalmente bloques de contenido. Un código bien comentado mejora la colaboración entre desarrolladores y la mantenibilidad del proyecto."
+        }
+      ],
+      "video": "",
+      "dato": "La correcta estructura del documento HTML es esencial para la compatibilidad entre navegadores, la optimización SEO y la accesibilidad digital."
+    },
+    {
+      "id": 3,
+      "title": "Etiquetas Fundamentales y Organización del Contenido",
+      "description": "Domina las etiquetas esenciales para estructurar texto, imágenes, enlaces, tablas y listas de forma semántica y profesional.",
+      "lecciones": [
+        {
+          "id": "c1",
+          "title": "Jerarquía de encabezados y párrafos",
+          "explicacion": "Los encabezados (`<h1>` a `<h6>`) establecen una jerarquía informativa. El `<h1>` define el tema principal y solo debe usarse una vez por página. Los párrafos (`<p>`) organizan texto en bloques lógicos. Esta estructura mejora la legibilidad y optimiza el SEO."
+        },
+        {
+          "id": "c2",
+          "title": "Enlaces y navegación hipertextual",
+          "explicacion": "Los enlaces (`<a href='...'>`) permiten conectar documentos y recursos. Pueden apuntar a páginas externas, internas o secciones dentro del mismo documento (`#id`). Usar el atributo `target='_blank'` abre el enlace en una nueva pestaña, pero debe usarse con precaución."
+        },
+        {
+          "id": "c3",
+          "title": "Imágenes y recursos multimedia",
+          "explicacion": "El elemento `<img>` inserta imágenes y requiere el atributo `alt` para describir el contenido, mejorando la accesibilidad. También es recomendable usar formatos optimizados (WebP, AVIF) y atributos como `loading='lazy'` para mejorar el rendimiento."
+        },
+        {
+          "id": "c4",
+          "title": "Listas y organización jerárquica de datos",
+          "explicacion": "Las listas ordenadas (`<ol>`) y no ordenadas (`<ul>`) agrupan información secuencial. Cada elemento se define con `<li>`. HTML también incluye listas de definición (`<dl>`, `<dt>`, `<dd>`) útiles para glosarios o pares término-definición."
+        },
+        {
+          "id": "c5",
+          "title": "Tablas y datos estructurados",
+          "explicacion": "Las tablas (`<table>`, `<tr>`, `<th>`, `<td>`) presentan datos en formato tabular. HTML5 promueve su uso exclusivamente para información estructurada, no para diseño visual. Es recomendable aplicar atributos como `scope` y `caption` para mejorar la accesibilidad."
+        }
+      ],
+      "video": "",
+      "dato": "El correcto uso de etiquetas semánticas diferencia a un HTML principiante de uno profesional, mejorando la accesibilidad y el SEO."
+    },
+    {
+      "id": 4,
+      "title": "Formularios y Experiencia de Usuario (UX)",
+      "description": "Aprenderás a diseñar formularios accesibles, funcionales y estéticamente coherentes con las prácticas modernas de diseño web.",
+      "lecciones": [
+        {
+          "id": "d1",
+          "title": "Estructura de un formulario",
+          "explicacion": "Los formularios (`<form>`) permiten la recolección de datos mediante elementos de entrada. Se conectan con scripts del servidor (PHP, Node.js, etc.) o APIs para procesar la información. Los atributos `action` y `method` (`GET`, `POST`) definen su comportamiento."
+        },
+        {
+          "id": "d2",
+          "title": "Controles de entrada modernos",
+          "explicacion": "HTML5 introdujo nuevos tipos de `<input>` como `email`, `date`, `color`, `number` y `range`. Estos mejoran la validación automática y la experiencia del usuario en dispositivos móviles."
+        },
+        {
+          "id": "d3",
+          "title": "Selección y agrupación de opciones",
+          "explicacion": "Los campos `checkbox`, `radio` y `select` permiten seleccionar opciones individuales o múltiples. Agruparlos con `<fieldset>` y `<legend>` mejora la semántica y accesibilidad del formulario."
+        },
+        {
+          "id": "d4",
+          "title": "Etiquetas, validación y accesibilidad",
+          "explicacion": "El uso correcto de `<label>` y los atributos `for` o `aria-label` mejora la accesibilidad. HTML5 también incluye validaciones nativas (`required`, `pattern`, `min`, `max`) que reducen errores del usuario antes del envío del formulario."
+        }
+      ],
+      "video": "",
+      "dato": "Un formulario bien diseñado no solo recolecta datos, sino que guía, valida y mejora la experiencia del usuario."
+    },
+    {
+      "id": 5,
+      "title": "Multimedia, Semántica y Contenido Enriquecido",
+      "description": "Descubre cómo HTML5 revolucionó la integración de contenido multimedia y la semántica en la web moderna.",
+      "lecciones": [
+        {
+          "id": "e1",
+          "title": "Audio y video nativos en HTML5",
+          "explicacion": "Las etiquetas `<audio>` y `<video>` permiten insertar medios directamente sin complementos externos. Se pueden personalizar mediante atributos (`controls`, `autoplay`, `loop`) y controlar con JavaScript para crear reproductores personalizados."
+        },
+        {
+          "id": "e2",
+          "title": "Etiquetas semánticas y estructura lógica",
+          "explicacion": "HTML5 introdujo etiquetas semánticas (`<header>`, `<footer>`, `<nav>`, `<article>`, `<section>`, `<aside>`) que definen mejor la intención del contenido, facilitando la comprensión por motores de búsqueda y tecnologías asistivas."
+        },
+        {
+          "id": "e3",
+          "title": "Contenido ilustrativo y descriptivo",
+          "explicacion": "El uso de `<figure>` y `<figcaption>` permite agrupar medios con sus descripciones, añadiendo contexto semántico. Es una práctica recomendada para galerías, infografías y contenido visual educativo."
+        }
+      ],
+      "video": "",
+      "dato": "El contenido semántico y multimedia enriquece la experiencia del usuario y mejora la accesibilidad global del sitio."
+    },
+    {
+      "id": 6,
+      "title": "Buenas Prácticas, Accesibilidad y SEO Técnico",
+      "description": "Aprenderás las normas que garantizan que tus documentos HTML sean válidos, accesibles, rápidos y optimizados para buscadores.",
+      "lecciones": [
+        {
+          "id": "f1",
+          "title": "Validación y estándares W3C",
+          "explicacion": "Validar tu HTML con el W3C Markup Validator asegura conformidad con los estándares, evitando errores de interpretación en diferentes navegadores y dispositivos."
+        },
+        {
+          "id": "f2",
+          "title": "Accesibilidad y estándares WCAG",
+          "explicacion": "La accesibilidad web (a11y) busca garantizar el acceso universal. HTML permite aplicar prácticas como texto alternativo (`alt`), etiquetas ARIA (`role`, `aria-label`) y navegación por teclado."
+        },
+        {
+          "id": "f3",
+          "title": "Optimización semántica y SEO técnico",
+          "explicacion": "El uso adecuado de etiquetas (`<h1>` único, títulos claros, metaetiquetas y microdatos) mejora el posicionamiento en buscadores y la comprensión del contenido por parte de los bots."
+        },
+        {
+          "id": "f4",
+          "title": "Estructura limpia y mantenible",
+          "explicacion": "Evita anidaciones incorrectas, repeticiones innecesarias y nombres de clases poco descriptivos. Comenta secciones clave y sigue una jerarquía clara para mantener un código legible y escalable."
+        }
+      ],
+      "video": "",
+      "dato": "La accesibilidad y las buenas prácticas no son opcionales: son el estándar de calidad profesional."
+    },
+    {
+      "id": 7,
+      "title": "Metadatos, Open Graph y Datos Estructurados",
+      "description": "Aprende a definir metadatos técnicos y sociales para mejorar la visibilidad y presentación de tu sitio web en buscadores y redes sociales.",
+      "lecciones": [
+        {
+          "id": "g1",
+          "title": "Metaetiquetas esenciales para SEO",
+          "explicacion": "Las metaetiquetas (`<meta>`) definen información como descripción, autor, idioma o viewport. Son clave para el SEO y la correcta visualización en diferentes dispositivos."
+        },
+        {
+          "id": "g2",
+          "title": "Open Graph y tarjetas de redes sociales",
+          "explicacion": "Los protocolos Open Graph (Facebook, LinkedIn) y Twitter Cards permiten controlar cómo se muestran los enlaces compartidos en redes, definiendo imágenes, títulos y descripciones personalizadas."
+        },
+        {
+          "id": "g3",
+          "title": "Microdatos y marcado semántico con Schema.org",
+          "explicacion": "Los microdatos estructurados (`itemscope`, `itemprop`) comunican a los motores de búsqueda el tipo de contenido (artículos, reseñas, eventos), mejorando el posicionamiento y la presentación en resultados enriquecidos."
+        }
+      ],
+      "video": "",
+      "dato": "Los metadatos y microdatos son el lenguaje que entiende Google para posicionar tu sitio correctamente."
+    },
+    {
+      "id": 8,
+      "title": "APIs de HTML5 y Funcionalidades Avanzadas",
+      "description": "Explora las APIs modernas que amplían las capacidades del navegador, permitiendo experiencias más dinámicas e interactivas.",
+      "lecciones": [
+        {
+          "id": "h1",
+          "title": "API de geolocalización",
+          "explicacion": "Permite obtener la posición geográfica del usuario con su consentimiento. Ideal para mapas, servicios locales o personalización de contenido. Se accede mediante `navigator.geolocation`."
+        },
+        {
+          "id": "h2",
+          "title": "Canvas y gráficos 2D",
+          "explicacion": "El elemento `<canvas>` permite generar gráficos dinámicos, animaciones o visualizaciones en tiempo real controladas con JavaScript. Es ampliamente usado en dashboards y juegos web."
+        },
+        {
+          "id": "h3",
+          "title": "Almacenamiento local y persistencia de datos",
+          "explicacion": "`localStorage` y `sessionStorage` permiten guardar datos directamente en el navegador, sin necesidad de cookies, facilitando experiencias personalizadas y aplicaciones offline."
+        }
+      ],
+      "video": "",
+      "dato": "Las APIs de HTML5 convierten la web en una plataforma de desarrollo completa y autosuficiente."
+    },
+    {
+      "id": 9,
+      "title": "Proyecto Final: Desarrollo de un Portfolio Profesional",
+      "description": "Pondrás en práctica todos los conocimientos adquiridos creando un portfolio moderno, semántico y accesible.",
+      "lecciones": [
+        {
+          "id": "i1",
+          "title": "Arquitectura y diseño del proyecto",
+          "explicacion": "Define la estructura del sitio, organiza secciones como ‘Sobre mí’, ‘Proyectos’, ‘Habilidades’ y ‘Contacto’. Planifica la jerarquía de encabezados y navegación."
+        },
+        {
+          "id": "i2",
+          "title": "Implementación con HTML5 semántico",
+          "explicacion": "Aplica etiquetas semánticas y buenas prácticas de estructura para construir tu portfolio desde cero, siguiendo estándares profesionales."
+        },
+        {
+          "id": "i3",
+          "title": "Optimización y publicación",
+          "explicacion": "Valida el HTML, añade metadatos, optimiza imágenes, prueba accesibilidad y publica tu sitio en plataformas como GitHub Pages, Netlify o Vercel."
+        }
+      ],
+      "video": "",
+      "dato": "Un portfolio bien construido es tu carta de presentación profesional en el mundo del desarrollo web."
+    }
+  ]
 }

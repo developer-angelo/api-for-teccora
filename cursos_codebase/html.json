@@ -29,6 +29,7 @@
           "explicacion": "Desde HTML 1.0 hasta HTML5, el lenguaje ha evolucionado bajo la supervisión del W3C y WHATWG. HTML5 introdujo etiquetas semánticas, compatibilidad nativa con audio y video, API de Canvas, almacenamiento local y geolocalización, marcando un cambio hacia aplicaciones web más ricas e interactivas sin depender de complementos externos."
         }
       ],
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s",
       "video": "",
       "dato": "HTML no es un lenguaje de programación, sino de marcado. Su función es estructurar, describir y dar significado al contenido web."
     },
